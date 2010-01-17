@@ -1,0 +1,32 @@
+\chapter{Problems and solutions}
+\section{Warnings}
+
+\subsection{Babel warning}
+Package babel Warning: No hyphenation patterns were loaded for
+(babel)                the language 'Swedish'
+(babel)                I will use the patterns loaded for {\footnotesize\verb|\language=0|} instead.
+
+\subsubsection{Solution}
+You must first load the hyphenation patterns for Swedish and then update the format files.
+ 
+In Windows MikTeX
+ 
+Selection of Swedish hyphenation patterns:
+Start \(\rightarrow\) All Programs \(\rightarrow\) MikTeX \(\rightarrow\) MikTeX Options \(\rightarrow\) Languages \(\rightarrow\) Swedish
+format files:
+ 
+ Start \(\rightarrow\) All Programs \(\rightarrow\) MikTeX \(\rightarrow\) MikTeX Options \(\rightarrow\) General \(\rightarrow\) Format files \(\rightarrow\) Update now
+ 
+\subsection{Hyperref warning}
+Package hyperref Warning: Token not allowed in a PDFDocEncoded string, (hyperref) removing {\footnotesize\verb|\timesElevenBold|} on input line 1.
+
+\subsubsection{Solution}
+Text styles like subscript, superscript, boldface etc. can't be represented in the bookmark text. Just ignore this warning and propose a substitution by typing {\footnotesize\verb|\texorpdfstring\{LATEX} text}{PDF text}|}
+
+\subsection{Overfull/Underfull hbox warning}
+Overfull/Underfull {\footnotesize\verb|\hbox|} (x pt too wide) in paragraph at lines xx--xx.
+
+\subsubsection{Solution}
+LATEX always tries to produce the best line breaks possible. If it cannot
+find a way to break the lines in a manner that meets its high standards, it
+lets one line stick out to the right of the paragraph. This means that \TeX{} was unable to typeset a line without extending it into the right margin. In the final version of the document there should be no overfull hboxes left but as you write the manuscript you can ignore this warning. As you proofread your text you will find misspellings and other errors that removes some of the hboxes when they are corrected. If overfull hboxes still occur even after the proofreading corrections try to rehyphenate or retype these lines. An easy way to find these errors is to add {\footnotesize\verb!draft!} to {\footnotesize\verb!\documentclass[11pt,a4paper,twoside,openright, draft]{book}!} while you make documents for proofreading. It adds black boxes in the margin where this errors occurs.

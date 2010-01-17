@@ -1,0 +1,409 @@
+% Aligning floats at top on a floats page
+\@fptop 0pt
+\@fpsep 13pt
+
+% Removing page numbers on empty pages
+\let\origdoublepage\cleardoublepage
+\newcommand{\clearemptydoublepage}{%
+  \clearpage
+  {\pagestyle{empty}\origdoublepage}%
+}
+\let\cleardoublepage\clearemptydoublepage
+
+% Removing footnote indentation
+\renewcommand\@makefntext[1]{%
+    \parindent 1em%
+    \noindent
+    \hb@xt@0.4em{\hss\@makefnmark}#1}
+
+% Font declarations
+
+\def\@viiipt{8,03}
+\def\@vivpt{9,03}
+\def\@xpt{10,04}
+\def\@xipt{11,04}
+\def\@xiiipt{13,05}
+\def\@xvpt{15,06}
+\def\@xviiipt{18,07}
+\def\@xxivpt{24,09}
+
+\renewcommand\normalsize{\@setfontsize\normalsize\@xipt{13}} %11/13pt
+\renewcommand\small{\@setfontsize\small\@xpt{12}}%10/12pt
+\renewcommand\footnotesize{\@setfontsize\footnotesize\@vivpt{11}}%9/11pt
+\renewcommand\scriptsize{\@setfontsize\scriptsize\@viiipt{10}}%8/10pt
+\renewcommand\tiny{\@setfontsize\tiny\@vipt{8}}%6/8pt
+\renewcommand\large{\@setfontsize\large\@xiiipt{15}}%13/15
+\renewcommand\Large{\@setfontsize\Large\@xvpt{17}}%15/17
+\renewcommand\LARGE{\@setfontsize\LARGE\@xviiipt{20}}%18/20
+\renewcommand\huge{\@setfontsize\huge\@xxpt{23}}%20/23
+\renewcommand\Huge{\@setfontsize\Huge\@xxivpt{28}}%24/28
+
+% Don't paginate parts.
+\renewcommand\part{%
+  \if@openright
+    \cleardoublepage
+  \else
+    \clearpage
+  \fi
+  \thispagestyle{empty}%
+  \if@twocolumn
+    \onecolumn
+    \@tempswatrue
+  \else
+    \@tempswafalse
+  \fi
+  \null\vskip 10\baselineskip
+  \secdef\@part\@spart}
+  
+% Redefinition of part page.
+  \def\@part[#1]#2{%
+    \ifnum \c@secnumdepth >-2\relax
+      \refstepcounter{part}%
+      \addcontentsline{toc}{part}{\normalsize\bfseries\partname\hspace{1ex}\thepart :\hspace{1ex}#1}%
+    \else
+      \addcontentsline{toc}{part}{#1}%
+    \fi
+    \markboth{}{}%
+    {%\centering
+     \interlinepenalty \@M
+     \normalfont
+     \ifnum \c@secnumdepth >-2\relax
+       \noindent\LARGE \partname\nobreakspace\thepart :
+       \par
+       \vskip 9\p@
+     \fi
+     \noindent\LARGE #2\par}%
+    %\@endpart}
+	\vskip \baselineskip\hskip -1em}
+	
+% Redifining part in the Table of contents.
+\renewcommand*\l@part[2]{%
+  \ifnum \c@tocdepth >-2\relax
+    \addpenalty{-\@highpenalty}%
+    \addvspace{1em \@plus\p@}%
+    \setlength\@tempdima{3em}%
+    \begingroup
+      \parindent \z@ \rightskip \@pnumwidth
+      \parfillskip -\@pnumwidth
+      {\leavevmode
+       \normalsize\bfseries #1\hfil \hb@xt@\@pnumwidth{\hss }}\par %#2 after \hss removed. No pagination of parts in toc.
+       \nobreak
+         \global\@nobreaktrue
+         \everypar{\global\@nobreakfalse\everypar{}}%
+    \endgroup
+  \fi}
+
+% Paginate chapter page as the rest of the pages i.e. inner and outer pagination.  
+\renewcommand\chapter{\if@openright\cleardoublepage\else\clearpage\fi
+                    \global\@topnum\z@
+                    \@afterindentfalse
+                    \secdef\@chapter\@schapter}
+
+% Removing the "Chapter n" text an replacing it by a single number.
+\def\@makechapterhead#1{%
+  \vspace{0\p@}%
+  {\parindent \z@ \raggedright \normalfont
+    \ifnum \c@secnumdepth >\m@ne
+      % Skipping the "Chapter n" text 
+      \if@mainmatter
+        \baselineskip=20pt\rightskip 2cm plus 3cm\LARGE\thechapter.\hspace{0.5em}%Chapterpoint added.
+      \fi
+    \fi
+    \LARGE #1\par\nobreak
+    \vskip 84\p@
+  }}
+\def\@makeschapterhead#1{%
+  \vspace{0\p@}%
+  {\parindent \z@ \raggedright\normalfont
+    \LARGE  #1\par\nobreak
+    \vskip 84\p@
+  }}
+  
+% Redefining paragraphs  
+% Syntax \@startsection{sec-name}{level}{indent}{pre-skip}{post-skip}{style}*[short-title]{title}
+% Heading 2
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+{-30pt}	{5pt}{\normalfont\Large\nohyphens\hangindent=0cm\hangafter=20}}% No heading should be longer than 20 lines. 
+% Heading 3
+\renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+{-20pt}{4pt}{\large\nohyphens\baselineskip=15pt\hangindent=0cm\hangafter=20}}
+% Heading 4
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+{-11pt}{2pt}{\normalsize\bfseries\nohyphens\hangindent=0cm\hangafter=20}}
+% Heading 5
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+{-11pt}{2pt}{\normalsize\itshape\nohyphens\hangindent=0cm\hangafter=20}}
+% Heading 6
+\renewcommand\subparagraph{\@startsection{subparagraph}{5}{\z@}%
+{-11pt}{2pt}{\normalsize\nohyphens\hangindent=0cm\hangafter=20}}
+
+% Space between dots in the Table of Contents
+\renewcommand\@dotsep{2.5}
+
+% Adding dots to first level heading in the Table of contents
+\renewcommand*\l@chapter[2]{%
+  \ifnum \c@tocdepth >\m@ne
+    \addpenalty{-\@highpenalty}%
+    \vskip 0.0em \@plus\p@
+    \setlength\@tempdima{1.5em}%
+    \begingroup
+      \parindent \z@ \rightskip \@pnumwidth
+      \parfillskip -\@pnumwidth
+      \leavevmode
+      \advance\leftskip\@tempdima
+      \hskip -\leftskip
+% Adding dots to 1:st level heading
+      #1\nobreak\ 
+       \leaders\hbox{$\m@th
+        \mkern \@dotsep mu\hbox{.}\mkern \@dotsep
+		mu$}\hfil\nobreak\hb@xt@\@pnumwidth{\hss #2}\par
+      \penalty\@highpenalty
+    \endgroup
+  \fi}
+  
+% Redefining the table of contents properties for all other entries
+\renewcommand*\l@section{\@dottedtocline{1}{4.5mm}{2.3em}}
+\renewcommand*\l@subsection{\@dottedtocline{2}{9mm}{3.2em}}
+\renewcommand*\l@subsubsection{\@dottedtocline{3}{13.5mm}{4.1em}}
+\renewcommand*\l@paragraph{\@dottedtocline{4}{18mm}{5em}}
+\renewcommand*\l@subparagraph{\@dottedtocline{5}{21.5mm}{6em}}
+
+% Setting the bibliography font to Times 10/11
+\renewenvironment{thebibliography}[1]
+     {\chapter{\bibname}%
+      \@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}%
+      \small
+      \list{\@biblabel{\@arabic\c@enumiv}}%
+           {\settowidth\labelwidth{\@biblabel{#1}}%
+            \leftmargin\labelwidth
+            \advance\leftmargin\labelsep
+            \@openbib@code
+            \usecounter{enumiv}%
+            \let\p@enumiv\@empty
+            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+      \sloppy
+      \clubpenalty4000
+      \@clubpenalty \clubpenalty
+      \widowpenalty4000%
+      \sfcode`\.\@m}
+     {\def\@noitemerr
+       {\@latex@warning{Empty `thebibliography' environment}}%
+      \endlist}
+      
+% Changing page numbers to outer and inner
+      \let\@oddhead\@empty\let\@evenhead\@empty
+      \def\@evenfoot{\thepage}%
+      \def\@oddfoot{\hfil\thepage}%
+
+	  \let\oldfrontmatter\frontmatter
+	  \renewcommand{\frontmatter}{% 
+		%\oldfrontmatter
+		\renewcommand{\thepage}{\roman{page}}% 
+		\setcounter{secnumdepth}{-2} % 
+		\let\@mainmatter\@mainmatterfalse% 
+		\let\@oddfoot\@empty\let\@evenfoot\@empty% 
+	  }
+	  \let\oldmainmatter\mainmatter
+	  \renewcommand{\mainmatter}{% 
+		%\oldmainmatter
+		\cleardoublepage% 
+		\renewcommand{\thepage}{\arabic{page}}% 
+		\setcounter{secnumdepth}{3} % 
+		\let\@mainmatter\@mainmattertrue% 
+		\def\@evenfoot{\thepage}% 
+		\def\@oddfoot{\hfil\thepage}% 
+	  }
+	  \let\oldbackmatter\backmatter
+	  \renewcommand{\backmatter}{% 
+		\oldbackmatter% 
+		\makeatletter% 
+		\renewcommand{\toclevel@chapter}{-1}% 
+		\renewcommand{\toclevel@section}{0}% 
+		\renewcommand{\toclevel@subsection}{1}% 
+		\renewcommand{\toclevel@subsubsection}{2}% 
+		\renewcommand{\toclevel@paragraph}{3}% 
+		\renewcommand{\toclevel@subparagraph}{4}% 
+		\makeatother% 
+	  }
+	  \let\oldprintindex\printindex
+	  \def\printindex{% 
+		{\if@openright\cleardoublepage\else\clearpage\fi% 
+		\refstepcounter{chapter}% 
+		\addcontentsline{toc}{chapter}{\indexname}} % 
+		{\renewcommand{\thispagestyle}[1]{}
+		\oldprintindex}
+
+	  }
+
+
+% Changes to table environment      
+\renewenvironment{table}
+               {\captionsetup{belowskip=3pt, aboveskip=6pt, labelfont=rm, textfont=it}
+				\captionsetup{font=small}
+				\small
+				\@float{table}}
+               {\end@float}
+
+% Changes to figure environment                 
+\renewenvironment{figure}
+               {\captionsetup{belowskip=6pt, aboveskip=3pt, labelfont=it, textfont=rm}
+				\captionsetup{font=small}
+				\@float{figure}}
+               {\end@float}
+
+% Table of contents without pagenumber
+\renewcommand\tableofcontents{%
+	\cleardoublepage
+	\thispagestyle{empty}
+    \if@twocolumn
+      \@restonecoltrue\onecolumn
+    \else
+      \@restonecolfalse
+    \fi
+    \chapter*{\contentsname
+        \@mkboth{%
+           \MakeUppercase\contentsname}{\MakeUppercase\contentsname}}%
+    \@starttoc{toc}%
+    \if@restonecol\twocolumn\fi
+    }
+               
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Page layout S5
+\usepackage{geometry}
+\geometry{verbose=false,papersize={165mm,242mm},body={120mm,202mm},marginratio={1:1, 9:11}}% marginratio={hhorizontal ratio,hverticalratio}
+\setlength{\parindent}{1em} % Default paragraph indentation.
+\setlength{\parskip}{0pt}% Sets the vertical spacing between paragraphs. Converting the parskip rubberlength of 0 to a non rubberlength permitting no extra space between paragraphs.
+\clubpenalty=10000 % Prohibits orphans
+\widowpenalty=10000 % Prohibits widows
+
+% Fonts
+\usepackage[T1]{fontenc} % Makes hyphenation work with diacritics.
+\frenchspacing % Tells LATEX not to insert more space after a period than after ordinary character.
+
+% Setting the default font
+\AtBeginDocument{\normalsize}
+
+\usepackage[it,nooneline]{caption} % Used for captionstyling. Caption heading should be in italics and one-line captions should not be centered.
+%\usepackage[cam,a4,center,pdftex]{crop} % Print crop marks on pages.
+	
+
+% Other
+
+
+\emergencystretch=0.2\hsize % (Default: 0.15\hsize) By setting this parameter to be greater than zero, you can make it easier for TEX to typeset your document without generating overfull hboxes. This is a better alternative than setting \tolerance=10000, since that tends to produce really ugly lines. If TEX canít typeset a paragraph without exceeding \tolerance, it will try again, adding \emergencystretch to the stretch of each line. The eect of the change is to scale down the badness of each line, enabling TEX to make spaces wider than they would otherwise be and thus choose line breaks that are as good as possible under the circumstances.
+
+% Enabling pdf output as well as DVI
+\RequirePackage{ifpdf}
+
+%Environments and Commands
+% New environments
+	\newenvironment{titlePage}
+		{\thispagestyle{empty}}{}
+	\newenvironment{abstract}
+		{\fontsize{9}{11}\selectfont\thispagestyle{empty}}{}
+	\newenvironment{enumerate-indent}
+        {\begin{list}{\arabic{enu}.}{
+            \usecounter{enu}
+            \setlength{\leftmargin}{13.5mm}% 9mm + 4,5 mm
+            \setlength{\itemsep}{0mm}
+            \setlength{\parsep}{0mm}
+            \setlength{\topsep}{0mm}}}
+        {\end{list}}
+    \newenvironment{itemize-indent}
+        {\begin{list}{\labelitemi}{
+            \setlength{\leftmargin}{13.5mm}
+            \setlength{\itemsep}{0mm}
+            \setlength{\parsep}{0mm}
+            \setlength{\topsep}{0mm}}}
+        {\end{list}}
+	\newcounter{romanlistc}
+	\renewcommand{\theromanlistc}{\Roman{romanlistc}}  %for ref use      
+    \newenvironment{romanlist}
+	{\setcounter{romanlistc}{0}
+        \begin{list}{\Roman{romanlistc}}{
+        \usecounter{romanlistc}
+            \setlength{\leftmargin}{2,5em}
+            \setlength{\labelsep}{1em}
+            \setlength{\itemsep}{0mm}
+            \setlength{\parsep}{0mm}
+            \setlength{\topsep}{0mm}}}
+        {\end{list}}
+    \newenvironment{romanlist-indent}
+        {\begin{list}{\Roman{enu}}{
+            \usecounter{enu}
+            \setlength{\leftmargin}{3,5em}
+            \setlength{\labelsep}{1em}
+            \setlength{\itemsep}{0mm}
+            \setlength{\parsep}{0mm}
+            \setlength{\topsep}{0mm}}}
+        {\end{list}}
+    \newenvironment{simplelist}
+        {\begin{list}{}{
+            \setlength{\leftmargin}{0mm}
+            \setlength{\itemsep}{0mm}
+            \setlength{\parsep}{0mm}
+            \setlength{\topsep}{0mm}}}
+        {\end{list}}
+    \newenvironment{simplelist-indent}
+        {\begin{list}{}{
+            \setlength{\leftmargin}{13.5mm}
+            \setlength{\itemsep}{0mm}
+            \setlength{\parsep}{0mm}
+            \setlength{\topsep}{0mm}}}
+        {\end{list}}
+    \newenvironment{CSquote}
+        {\begin{list}{}{
+            \setlength{\itemsep}{0mm}
+            \setlength{\parsep}{0mm}
+            \setlength{\topsep}{0mm}
+            \setlength{\itemindent}{9mm}
+            \setlength{\leftmargin}{10mm}
+            \setlength{\rightmargin}{0mm}
+            \setlength{\listparindent}{4,5mm}
+            \setlength{\labelwidth}{0mm}
+            \setlength{\labelsep}{0mm}
+            \small}
+            \item}
+        {\end{list}}
+    \newenvironment{listheading}[1]{\vspace{13pt}\noindent\emph{#1}}
+
+% Renew environments
+\newcounter{enu} % List counter
+    \renewenvironment{enumerate}
+        {\begin{list}{\arabic{enu}.}{
+        \usecounter{enu}
+        \setlength{\leftmargin}{4.5mm}
+        \setlength{\itemsep}{0mm}
+        \setlength{\parsep}{0mm}
+        \setlength{\topsep}{0mm}}}
+        {\end{list}}
+    \renewenvironment{itemize}
+        {\begin{list}{\labelitemi}{
+        \setlength{\leftmargin}{4.5mm}
+        \setlength{\itemsep}{0mm}
+        \setlength{\parsep}{0mm}
+        \setlength{\topsep}{0mm}}}
+        {\end{list}}
+    \renewenvironment{quotation}
+        {\begin{CSquote}\vspace{13pt}\noindent\fontsize{10}{12}\selectfont\ignorespaces}
+        {\unskip\vspace{13pt}\end{CSquote}}
+    \renewenvironment{quote}
+        {\begin{quotation}}
+        {\end{quotation}}
+
+% Renew commands
+    \renewcommand\footnoterule{\noindent\rule{26mm}{.5pt}\vspace{3pt}} % Horizontal line between page text and footnotes.
+    \renewcommand\footnotemark{\scriptsize}
+    \renewcommand\footnotetext{\footnotesize}
+    \renewcommand{\arraystretch}{1.22} %9/11
+    \renewcommand{\captionfont}{\small}
+    \renewcommand{\captionlabelfont}{\small\itshape}
+    \renewcommand{\bibname}{References}
+% New commands
+    \newcommand{\nohyphens}{\hyphenpenalty=10000\exhyphenpenalty=10000\relax}
+    \newcommand{\code}[1]{{\footnotesize\texttt{#1}}}
+    
+% Sets vertical space between equations and text
+	\abovedisplayshortskip=0pt \belowdisplayshortskip=13pt
+	\abovedisplayskip=6pt \belowdisplayskip=13pt

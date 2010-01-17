@@ -1,0 +1,74 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Template for Doctoral Theses at Uppsala %
+% University. The template is based on    %
+% the layout and typography used for      %
+% dissertations in the Acta Universitatis %
+% Upsaliensis series                      %
+% Ver 4.0.1 - 2008-11-03                  %
+%                                         %
+% Publishing & Graphic Services           %
+% espik@ub.uu.se                          %
+%                                         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[11pt,a4paper,twoside, openright]{book} % Default font 11pt, A4, all pages are printed the same, new chapter always begins on a right-hand page.
+
+% Package import
+% Language, diacritics and hyphenation
+\usepackage[swedish,english]{babel} % Use English and Swedish languages. English default. English hyphenation.
+\usepackage[latin1]{inputenc} % Unix users should include this package instead of ansinew or applemac for correct handling of diacritics.
+%\usepackage[applemac]{inputenc} % Macintosh users should include this package instead of ansinew or latin1 for correct handling of diacritics.
+%\usepackage[ansinew]{inputenc} % % Windows users should include this package instead of applemac or latin1 for correct handling of diacritics.
+\usepackage[T1]{fontenc}% Enables the use of 8-bit characters and å, ä, ö can be typed as å, ä, ö instead of the corresponding commands.
+
+% Page elements
+\usepackage{mathptmx} % Default font for dissertations is Times.
+%\usepackage{fourier} % If mathematics don't display well using Times, then use Fourier.
+\usepackage{helvet} % Default sans-serif font.
+\usepackage{courier}% Default typewriter (monotype) font.
+\usepackage{Thesis} % This package is specific for theses written at Uppsala University. Modifications to the classfile and the document can be found here.
+\ifpdf
+   \usepackage[pdftex]{graphicx}
+  \else
+    \usepackage[dvips]{graphicx}
+\fi % Used for figures
+\usepackage{booktabs} % Produces good three line tables which is the standard tabel format for disserations.
+\usepackage[colorlinks=true, urlcolor=black, pagecolor=black, linkcolor=black, citecolor=black, filecolor=black, menucolor=black, pdfpagelabels,bookmarksnumbered=true]{hyperref} % Use this package to produce links in the electronic version of the document. All hyperlinks are black. Page view is set to Fit Width and page layout is set to display the document spread.  Make page anchors using the formatted form of the page number.  Set PDF page labels; i.e., write the value of \thepage to the PDF file so that Acrobat Reader can display the page number as (say) 'ii (4 of 40)' rather than simply '4 of 40'.
+
+% Bibliographic information
+\input{BiblioInfo.tex} % This file should be edited by the author.
+
+\begin{document}
+\frontmatter
+    %\frontmatterMonograph % Monograph authors use this front matter 
+    \frontmatterCS % Authors of Comprehensive Summaries use this front matter 
+    % Creates the front matter (title page(s), abstract, list of papers)
+    % for either a Comprehensive Summary or a Monograph.
+    
+    \tableofcontents
+    
+    % Optional tables
+    %\listoftables
+    %\listoffigures
+
+\mainmatter
+    % This includes the "Instruction", "Problem and Solutions" and "Example" files. After reading it, remove it from Thesis.tex. 
+    \input{Instruction.tex}
+    \input{ProblemsAndSolutions}
+    \input{Example.tex}
+    
+	% Include your chapters here.
+    %\input{Introduction.tex}
+
+
+\backmatter
+
+    % References
+    % No restriction is set to the reference styles
+    % Save your references in References.bib
+    \nocite{*} % Remove this for your own citations
+    \bibliographystyle{plain}
+    \bibliography{References}
+
+\end{document}

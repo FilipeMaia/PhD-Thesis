@@ -1,0 +1,33 @@
+\begin{thebibliography}{1}
+
+\bibitem{Flynn:05}
+Peter Flynn.
+\newblock {\em Formatting information. A beginner's introduction to typesetting
+  with \LaTeX{}}.
+\newblock 3rd edition, 2005.
+\newblock http://www.ctan.org/tex-archive/info/beginlatex/beginlatex-3.6.pdf.
+
+\bibitem{Kopka:99}
+Patrik W.~Daly Helmut~Kopka.
+\newblock {\em A Guide to \LaTeXe{}}.
+\newblock Addison-Wesley Professional, 4th edition, 2003.
+
+\bibitem{Goossens:93}
+Frank Mittelbach, Michel~Goossens with Johannes~Braams, David Carlisle, and
+  Chris Rowley.
+\newblock {\em The \LaTeXe{} Companion}.
+\newblock Addison-Wesley Professional, 2nd edition, 2004.
+
+\bibitem{Oetiker:04}
+Tobias Oetiker, Hubert Partl, Irene Hyna, and Elisabeth Schlegl.
+\newblock {\em The Not So Short Introduction to \LaTeXe{}}.
+\newblock 4.14th edition, 2004.
+\newblock http://www.ctan.org/tex-archive/info/lshort/english/lshort.pdf.
+
+\bibitem{Abrahams:92}
+Paul W.~Abrahams with Karl~Berry and Kathryn~A. Hargreaves.
+\newblock {\em \TeX{} for the Impatient}.
+\newblock Addison-Wesley Professional, 2003.
+\newblock http://www.tug.org/ftp/tex/impatient/book.pdf.
+
+\end{thebibliography}
