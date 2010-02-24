@@ -1,4 +1,37 @@
 \chapter{X-ray Diffraction Theory}\label{diffraction_theory}\noindent
 
+This chapter gives an overview of the most important tools necessary to understand X-ray diffraction and provides a simple framework for analysing most CXDI experiments based on first Born approximation, also known as "kinematical" or "single-scattering" approximation. This will be of fundamental importance when we later try to reconstruct the object that gave rise to a given diffraction pattern, as it is obviously impossible to do this if we cannot predict the diffraction pattern that a given object produces.
+
+\section{Fourier Transform Basics}\label{fourier_transform_basics}
+
+Fourer transforms are used extensively in the subject of diffraction and imaging, so we will present a short introduction describing the Fourier transform and its most commonly used properties. These properties will be fundamental for both for the description scattering and for the explanation of image reconstruction algorithms.
+
+We will start by defining the continuous forward Fourier transform, following crystallographic tradition, as,
+\begin{equation}
+\hat{f}({\mathbf q}) = \mathcal{F}f = \int \limits_{-\infty}^{\infty} f({\mathbf x}) \exp(2 \pi i
+\mathbf{q \cdot x}) \, \mathrm{d} \mathbf{x}
+\end{equation}
+
 In this chapter I will describe in not too many words a diffraction framework
 using the born-approximation.
+
+- Define Continuous Fourier Transform 
+
+- State some handy properties of the fourier transform like like:
+
+* Symmetry from real functions
+* Friedel's law 
+* Convolution theorem
+* Autocorrelation
+
+- Define DFT
+
+- Talk about sampling and oversampling and define oversampled
+
+- Nyquist frequency
+
+- Aliasing
+
+- Scattering by a free electron
+
+- Scattering by an arbitrary electron density

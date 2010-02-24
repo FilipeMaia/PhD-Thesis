@@ -24,9 +24,12 @@
 
 % Page elements
 \usepackage{mathptmx} % Default font for dissertations is Times.
+%\usepackage{times} % Default font for dissertations is Times.
 %\usepackage{fourier} % If mathematics don't display well using Times, then use Fourier.
-\usepackage{helvet} % Default sans-serif font.
-\usepackage{courier}% Default typewriter (monotype) font.
+%\usepackage{helvet} % Default sans-serif font.
+%\usepackage{courier}% Default typewriter (monotype) font.
+
+%\usepackage{mathpazo}
 \usepackage{Thesis} % This package is specific for theses written at Uppsala University. Modifications to the classfile and the document can be found here.
 \ifpdf
    \usepackage[pdftex]{graphicx}
@@ -34,7 +37,29 @@
     \usepackage[dvips]{graphicx}
 \fi % Used for figures
 \usepackage{booktabs} % Produces good three line tables which is the standard tabel format for disserations.
-\usepackage[colorlinks=true, urlcolor=black, pagecolor=black, linkcolor=black, citecolor=black, filecolor=black, menucolor=black, pdfpagelabels,bookmarksnumbered=true]{hyperref} % Use this package to produce links in the electronic version of the document. All hyperlinks are black. Page view is set to Fit Width and page layout is set to display the document spread.  Make page anchors using the formatted form of the page number.  Set PDF page labels; i.e., write the value of \thepage to the PDF file so that Acrobat Reader can display the page number as (say) 'ii (4 of 40)' rather than simply '4 of 40'.
+\usepackage[colorlinks=true, urlcolor=black, pagecolor=black, linkcolor=black,
+citecolor=black, filecolor=black, menucolor=black,
+pdfpagelabels,bookmarksnumbered=true]{hyperref} % Use this package to produce
+                                % links in the electronic version of the
+                                % document. All hyperlinks are black. Page view
+                                % is set to Fit Width and page layout is set to
+                                % display the document spread.  Make page
+                                % anchors using the formatted form of the page
+                                % number.  Set PDF page labels; i.e., write the
+                                % value of \thepage to the PDF file so that
+                                % Acrobat Reader can display the page number as
+                                % (say) 'ii (4 of 40)' rather than simply '4 of
+                                % 40'.
+
+%\usepackage{mathpazo}
+%\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{euler}
+\usepackage{eucal}
+% This gives me a reasonable looking mathscr font for fourier transforms
+%\DeclareMathAlphabet{\mathscr}{OMS}{pzc}%
+%                                 {m}{it}
 
 % Bibliographic information
 \input{BiblioInfo.tex} % This file should be edited by the author.
@@ -58,7 +83,10 @@
     % This includes the "Instruction", "Problem and Solutions" and "Example"
     % files. After reading it, remove it from Thesis.tex. 
 \input{introduction}
+\input{ultrafast_sources}
 \input{diffraction_theory}
+\input{image_reconstruction}
+\input{future_perspectives}
 %    \input{Instruction.tex}
 %    \input{ProblemsAndSolutions}
 %    \input{Example.tex}
