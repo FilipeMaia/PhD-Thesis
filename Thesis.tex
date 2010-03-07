@@ -28,6 +28,8 @@
 %\usepackage{fourier} % If mathematics don't display well using Times, then use Fourier.
 %\usepackage{helvet} % Default sans-serif font.
 %\usepackage{courier}% Default typewriter (monotype) font.
+\usepackage[OT2,OT1]{fontenc}
+\def\Sha{{\fontencoding{OT2}\selectfont SH}}
 
 %\usepackage{mathpazo}
 \usepackage{Thesis} % This package is specific for theses written at Uppsala University. Modifications to the classfile and the document can be found here.
@@ -58,8 +60,8 @@ pdfpagelabels,bookmarksnumbered=true]{hyperref} % Use this package to produce
 %\usepackage{euler}
 \usepackage{eucal}
 % This gives me a reasonable looking mathscr font for fourier transforms
-%\DeclareMathAlphabet{\mathscr}{OMS}{pzc}%
-%                                 {m}{it}
+\DeclareMathAlphabet{\mathscr}{OMS}{pzc}%
+                                 {m}{it}
 
 % Bibliographic information
 \input{BiblioInfo.tex} % This file should be edited by the author.
@@ -84,6 +86,7 @@ pdfpagelabels,bookmarksnumbered=true]{hyperref} % Use this package to produce
     % files. After reading it, remove it from Thesis.tex. 
 \input{introduction}
 \input{ultrafast_sources}
+\input{fourier_theory}
 \input{diffraction_theory}
 \input{image_reconstruction}
 \input{future_perspectives}
