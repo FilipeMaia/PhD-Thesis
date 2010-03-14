@@ -1,1 +1,145 @@
 \chapter{Image Reconstruction}\label{Image Reconstruction}\noindent
+
+In the previous chapter we have developed tools that allow us to predict
+and calculate the X-ray diffraction pattern from an arbitrary electron density,
+using mild assumptions. In this chapter we will try to tackle the {\em inverse
+  problem}, that is, from an arbitrary diffraction pattern we will try to
+recover the electron density that gave rise to it.
+\section{The Phase Problem}
+
+We have seen that a diffraction pattern can be calculated from the Fourier
+transform of the electron density. We have also seen in chapter
+\ref{fourier_transform_basics} that the inverse of the Fourier transform is
+exactly like the Fourier transform, except with the sign of the exponent
+swapped. So we should be able to recover the electron density by,
+\begin{equation}
+\rho(\mathbf r) = \int_{\mathbf r} F(\mathbf S) \exp\left(-2
+    \pi i \mathbf r \cdot \mathbf S \right) d\mathbf S\, .
+\end{equation}
+
+In general $F(\mathbf S)$ is a complex number and unfortunately it is not
+possible to measure $F(\mathbf S)$, but only its absolute value, also known as
+amplitude. The phase, also known as the argument of $F(\mathbf S)$, is not known and so
+this problem is often called the {\em phase problem}. One could try to reconstruct the
+object assuming that the phases have an arbitrary value, say 0, and use the
+experimental intensities but this usually gives an uninterpretable picture. On
+the other hand if the phases were known and the amplitudes unknown, then the
+resulting picture is still quite similar to the original, suggesting that the
+phases carry more structural information than the amplitudes (see Fig. \ref{Fig:PhaseSwapping}).
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1 \columnwidth]{PhaseSwapping.png}
+  \caption{Portraits of Jean-Baptiste Fourier (a) and Wilhelm R\"{o}ntgen (b).
+    {\bf c)} Fourier synthesis using the amplitudes from b and the phases from
+    a. {\bf d)}
+    Fourier synthesis using the amplitudes from a and the phases from b.}
+  \label{Fig:PhaseSwapping}
+\end{figure}
+
+If nothing about the object being imaged is known then the problem is
+undetermined, as for a pattern with $N$ pixels we have $2N$ unknowns (the real and
+imaginary part of the object) but only $N$ constraints. But if we known that the object is isolated, meaning the
+object is surrounded by a constant $\rho$ (e.g., sample in vacuum where
+surrounding $\rho = 0$), then in some circunstances it is possible to solve this
+problem. The number of pixels of the object must at least be half of that of the
+diffraction pattern for the number of unknowns match the number of
+constraints, that is the oversampling ratio (see Fig. \ref{Fig:OversamplingRatio}) of the image must be bigger than
+two, or equivalently the object must occupy less than half of the field of
+view. We will call images which fullfill this condition {\em oversampled}.
+
+But this is not enough being able to solve the problem. In fact it
+has long been known that the problem is often undetermined in one dimension
+\cite{Walther63}. Fortunately for higher dimensions is has been proven it has
+been proven that most oversampled patterns have unique solutions
+\cite{Bruck79}. This difference derives from the fact that one-dimensional
+polynomials are factorizable unlike two or higher dimension ones.
+
+\section{Image Reconstruction Algorithms}
+
+Knowing that the two or higher dimensional phasing problem for oversampled
+patterns has a unique solution in most cases is a necessary starting point to
+solve the phase problem, but a method to find that unique solution is still
+necessary. The phase problem is remarkably difficult since it is neither a
+linear nor a convex problem. That makes it a nonconvex problem in a very high
+dimensional space, which is a class of problems that is very challenging.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1 \columnwidth]{convexity.png}
+  \caption{Function to be minimized for a linear (a), convex (b) and nonconvex
+    (c) optimization problems.}
+  \label{Fig:Convexity}
+\end{figure}
+
+In 1972 Gerchberg and Saxton \cite{Gerchberg72} introduced an iterative algorithm to solve
+a related problem, that of obtaining phase information using both the
+diffraction pattern and an electron micrograph of a sample. The iteration starts
+by fourier transforming the real space input, $\rho_i(\mathbf x)$. Then it
+replaces the resulting amplitudes with the square root of the intensities,
+$I(\mathbf S)$. The result is then back fourier transformed and the amplitudes
+of the resulting images are replaced by the ones from the electron micrograph $M(\mathbf r)$.
+\begin{algorithm}
+\caption{Gerchberg-Saxton Iteration}
+\begin{algorithmic}
+  \STATE $F_{i}(\mathbf S) \gets \mathscr{F}\{\rho_i(\mathbf r)\}$
+  \STATE $F_{i+1}(\mathbf S) \gets \sqrt{I(\mathbf S)} \frac{F_i(\mathbf S)}{|F_i(\mathbf S)|}$
+  \STATE $\rho_{i+1}(\mathbf r) \gets M(\mathbf r)
+  \frac{\mathscr{F}^{-1}\{F_{i+1}(\mathbf
+    S)\}}{|\mathscr{F}^{-1}\{F_{i+1}(\mathbf S)\}|}$
+\end{algorithmic}
+\end{algorithm}
+
+In 1978 Fienup \cite{Fienup78}, inspired by the above algorithm, introduced the error
+reduction algorithm to solve the phasing problem. Instead of using the electron
+micrograph as constraints in real space Fienup introduces the concept of {\em
+  support} function, $\Pi(\mathbf r)$, which is equal to 1 where the
+object is allowed the reside and 0 otherwise. 
+The iteration is analogue to the Gerchberg-Saxton but the last step is replaced
+by setting all points outside the support to 0.
+\begin{algorithm}
+\caption{Error Reduction Iteration}
+\begin{algorithmic}
+  \STATE $F_{i}(\mathbf S) \gets \mathscr{F}\{\rho_i(\mathbf r)\}$
+  \STATE $F_{i+1}(\mathbf S) \gets \sqrt{I(\mathbf S)} \frac{F_i(\mathbf S)}{|F_i(\mathbf S)|}$
+  \STATE $\rho_{i+1}(\mathbf r) \gets \Pi(\mathbf r) \mathscr{F}^{-1}\{F_{i+1}(\mathbf S)\}$
+%  \STATE $i = 0$
+\end{algorithmic}
+\end{algorithm}
+
+By applying this procedure iteratively it is possible to recover the correct
+solution. Unfortunately in practise the algorithm easily gets stuck in
+local minima and cannot find the global minimum.
+
+\subsection{Iterations as Projections}
+
+In 1984 Levi and Stark realized that the above iterations can be
+interpreted as projections in Hilbert space \cite{Levi84}. This provides a
+particularly powerful method for trying to understand these algorithms.
+Lets call the replacement of the fourier space amplitudes with the square root of
+the intensities the modulus projection, $P_m$, and the replacement of the image
+outside of the support with 0 the support projection, $P_s$. If one treats the
+real space image as a vector in a high dimensional space, with one dimension per
+pixel, then it is easy to see that $P_s$ is the projection into the hyperplane
+spanned by the dimensions corresponding to pixels inside the support. The
+modulus projection can also be interpreted as a projection in the space of the
+pixels of the diffraction pattern, where each pixel contributes two dimensions,
+the real part and the imaginary part (see Fig. \ref{Fig:Projections}). 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1 \columnwidth]{projections.png}
+  \caption{{\bf a)} Support projection for a 3 pixel image where the support is
+    composed of pixels 2 and 3. {\bf b)} Modulus projection for 1 pixel of the
+    diffraction pattern.}
+  \label{Fig:Projections}
+\end{figure}
+
+Due to the distance preserving property of the Fourier transform the modulus
+projection is also a projection in real space. The biggest difference between
+the two projection is that while the support constraint set is convex, the
+modulus constraint is not, not all points between two points of the modulus
+constraint set belong to the modulus constraint set.
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "Thesis"
+%%% End: 
