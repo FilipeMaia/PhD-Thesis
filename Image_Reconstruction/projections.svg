@@ -657,7 +657,10 @@
      inkscape:label="Axis"
      style="display:inline">
     <g
-       id="g20123">
+       id="g20123"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/projections.png"
+       inkscape:export-xdpi="399.99649"
+       inkscape:export-ydpi="399.99649">
       <path
          inkscape:export-ydpi="399.99649"
          inkscape:export-xdpi="399.99649"
@@ -878,7 +881,10 @@
        x="13.460247"
        y="283.16757"
        id="text19846"
-       sodipodi:linespacing="125%"><tspan
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/projections.png"
+       inkscape:export-xdpi="399.99649"
+       inkscape:export-ydpi="399.99649"><tspan
          sodipodi:role="line"
          id="tspan19848"
          x="13.460247"
@@ -889,7 +895,10 @@
        y="283.25159"
        x="510.10037"
        style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Roman No9 L;-inkscape-font-specification:Nimbus Roman No9 L"
-       xml:space="preserve"><tspan
+       xml:space="preserve"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/projections.png"
+       inkscape:export-xdpi="399.99649"
+       inkscape:export-ydpi="399.99649"><tspan
          y="283.25159"
          x="510.10037"
          id="tspan19852"
@@ -912,7 +921,10 @@
      style="display:inline">
     <g
        id="g19983"
-       transform="translate(0,11.046499)">
+       transform="translate(0,11.046499)"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/projections.png"
+       inkscape:export-xdpi="399.99649"
+       inkscape:export-ydpi="399.99649">
       <path
          inkscape:export-ydpi="399.99649"
          inkscape:export-xdpi="399.99649"
