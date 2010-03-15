@@ -139,6 +139,20 @@ projection is also a projection in real space. The biggest difference between
 the two projection is that while the support constraint set is convex, the
 modulus constraint is not, not all points between two points of the modulus
 constraint set belong to the modulus constraint set.
+
+In this framework of projections the Error Reduction algorithm is simply $P_m$
+followed by $P_s$. The fact that it stagnates can then be easily understood in
+connection to the non convexity of the modulus constraint as
+Fig. \ref{Fig:Stagnation} illustrates.
+
+\begin{figure}
+\centering
+  \includegraphics[width=0.7 \columnwidth]{Image_Reconstruction/Stagnation.pdf}
+  \caption{Successive iterations of the Error Reduction algorithm represented as
+    vectors of different color. The algorithm stagnates on a local minimum due
+    to the non convexity of the modulus constraint set.}
+  \label{Fig:Stagnation}
+\end{figure}
 %%% Local Variables: 
 %%% mode: latex
 %%% TeX-master: "../Thesis"
