@@ -27,6 +27,7 @@
 \newcounter{ALC@line}
 \newcounter{ALC@rem}
 \newcounter{ALC@depth}
+\newcounter{ALC@unique}
 \newlength{\ALC@tlm}
 %
 \DeclareOption{noend}{\setboolean{ALC@noend}{true}}
@@ -126,7 +127,20 @@
     }
   }
   {\end{list}}
-  \newcommand{\ALC@it}{\refstepcounter{ALC@line}\refstepcounter{ALC@rem}\ifthenelse{\equal{\arabic{ALC@rem}}{#1}}{\setcounter{ALC@rem}{0}}{}\item\ALC@setref}
+%  \newcommand{\ALC@it}{\refstepcounter{ALC@line}\refstepcounter{ALC@rem}\ifthenelse{\equal{\arabic{ALC@rem}}{#1}}{\setcounter{ALC@rem}{0}}{}\item\ALC@setref}
+  \newcommand{\ALC@it}{\@ifundefined{href}{% if not hyperref then do a simple refstepcounter
+    \refstepcounter{ALC@rem}%
+}{% else if hyperref, do the anchor so 2 lines in two differents algorithms cannot have the same href
+   
+\stepcounter{ALC@unique}\stepcounter{ALC@rem}\Hy@raisedlink{\hyper@anchorstart{ALC@rem\theALC@unique.\theALC@rem}\hyper@anchorend}%
+}%
+\@ifundefined{href}{% if not hyperref then do a simple refstepcounter
+    \refstepcounter{ALC@line}%
+}{% else if hyperref, do the anchor so 2 lines in two differents algorithms cannot have the same href
+   
+\stepcounter{ALC@unique}\stepcounter{ALC@line}\Hy@raisedlink{\hyper@anchorstart{ALC@line\theALC@unique.\theALC@line}\hyper@anchorend}%
+}%
+\ifthenelse{\equal{\arabic{ALC@rem}}{#1}}{\setcounter{ALC@rem}{0}}{}\item\ALC@setref}
   \newcommand{\ALC@com}[1]{\ifthenelse{\equal{##1}{default}}%
 {}{\ \algorithmiccomment{##1}}}
   \newcommand{\REQUIRE}{\item[\algorithmicrequire]}

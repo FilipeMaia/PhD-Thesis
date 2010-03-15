@@ -39,19 +39,6 @@
     \usepackage[dvips]{graphicx}
 \fi % Used for figures
 \usepackage{booktabs} % Produces good three line tables which is the standard tabel format for disserations.
-\usepackage[colorlinks=true, urlcolor=black, pagecolor=black, linkcolor=black,
-citecolor=black, filecolor=black, menucolor=black,
-pdfpagelabels,bookmarksnumbered=true,plainpages=false]{hyperref} % Use this package to produce
-                                % links in the electronic version of the
-                                % document. All hyperlinks are black. Page view
-                                % is set to Fit Width and page layout is set to
-                                % display the document spread.  Make page
-                                % anchors using the formatted form of the page
-                                % number.  Set PDF page labels; i.e., write the
-                                % value of \thepage to the PDF file so that
-                                % Acrobat Reader can display the page number as
-                                % (say) 'ii (4 of 40)' rather than simply '4 of
-                                % 40'.
 
 %\usepackage{mathpazo}
 %\usepackage{mathrsfs}
@@ -59,12 +46,27 @@ pdfpagelabels,bookmarksnumbered=true,plainpages=false]{hyperref} % Use this pack
 \usepackage{amssymb}
 %\usepackage{euler}
 \usepackage{eucal}
-\usepackage{algorithmic}
-\usepackage{algorithm}
-\numberwithin{algorithm}{chapter}
 % This gives me a reasonable looking mathscr font for fourier transforms
 \DeclareMathAlphabet{\mathscr}{OMS}{pzc}%
                                  {m}{it}
+\usepackage{float}
+\usepackage[colorlinks=true, urlcolor=black, pagecolor=black, linkcolor=black,
+citecolor=black, filecolor=black, menucolor=black,
+pdfpagelabels,bookmarksnumbered=true,plainpages=false]{hyperref} % Use this package to produce
+                               % links in the electronic version of the
+                               % document. All hyperlinks are black. Page view
+                               % is set to Fit Width and page layout is set to
+                               % display the document spread.  Make page
+                               % anchors using the formatted form of the page
+                               % number.  Set PDF page labels; i.e., write the
+                               % value of \thepage to the PDF file so that
+                               % Acrobat Reader can display the page number as
+                               % (say) 'ii (4 of 40)' rather than simply '4 of
+                               % 40'.
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\numberwithin{algorithm}{chapter}
+
 
 % Bibliographic information
 \input{BiblioInfo.tex} % This file should be edited by the author.
