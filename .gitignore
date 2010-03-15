@@ -1,1 +1,11 @@
 *.log
+*~
+*.aux
+*.bbl
+*.ps
+*.out
+*.toc
+_region_*
+Thesis.pdf
+Image_Reconstruction/swap_phases
+CalleThesis/
