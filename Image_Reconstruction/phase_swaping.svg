@@ -80,7 +80,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -94,7 +94,7 @@
        id="image2968"
        height="512"
        width="512"
-       xlink:href="file:///home/filipe/Documents/PhD-Thesis/RoentgenPhyFourierA.png"
+       xlink:href="file:///home/filipe/Documents/PhD-Thesis//Image_Reconstruction/RoentgenPhyFourierA.png"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/phase_swaping.png"
        inkscape:export-xdpi="100"
        inkscape:export-ydpi="100" />
@@ -104,7 +104,7 @@
        id="image3042"
        height="512"
        width="512"
-       xlink:href="file:///home/filipe/Documents/PhD-Thesis/FourierPhyRoentgenA.png"
+       xlink:href="file:///home/filipe/Documents/PhD-Thesis//Image_Reconstruction/FourierPhyRoentgenA.png"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/phase_swaping.png"
        inkscape:export-xdpi="100"
        inkscape:export-ydpi="100" />
@@ -114,7 +114,7 @@
        id="image3116"
        height="512"
        width="512"
-       xlink:href="file:///home/filipe/Documents/PhD-Thesis/Roentgen2.png"
+       xlink:href="file:///home/filipe/Documents/PhD-Thesis//Image_Reconstruction/Roentgen2.png"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/phase_swaping.png"
        inkscape:export-xdpi="100"
        inkscape:export-ydpi="100" />
@@ -124,7 +124,7 @@
        id="image3190"
        height="512"
        width="512"
-       xlink:href="file:///home/filipe/Documents/PhD-Thesis/Fourier2.png"
+       xlink:href="file:///home/filipe/Documents/PhD-Thesis/Image_Reconstruction/Fourier2.png"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/phase_swaping.png"
        inkscape:export-xdpi="100"
        inkscape:export-ydpi="100" />

@@ -28,7 +28,7 @@ resulting picture is still quite similar to the original, suggesting that the
 phases carry more structural information than the amplitudes (see Fig. \ref{Fig:PhaseSwapping}).
 \begin{figure}[h]
   \centering
-  \includegraphics[width=1 \columnwidth]{Image_Reconstruction/PhaseSwapping.png}
+  \includegraphics[width=1 \columnwidth]{Image_Reconstruction/PhaseSwapping2.png}
   \caption{Portraits of Jean-Baptiste Fourier (a) and Wilhelm R\"{o}ntgen (b).
     {\bf c)} Fourier synthesis using the amplitudes from b and the phases from
     a. {\bf d)}
@@ -65,7 +65,7 @@ dimensional space, which is a class of problems that is very challenging.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=1 \columnwidth]{Image_Reconstruction/convexity.png}
+  \includegraphics[width=1 \columnwidth]{Image_Reconstruction/convexity.pdf}
   \caption{Function to be minimized for a linear (a), convex (b) and nonconvex
     (c) optimization problems.}
   \label{Fig:Convexity}
@@ -145,14 +145,70 @@ followed by $P_s$. The fact that it stagnates can then be easily understood in
 connection to the non convexity of the modulus constraint as
 Fig. \ref{Fig:Stagnation} illustrates.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
-  \includegraphics[width=0.7 \columnwidth]{Image_Reconstruction/Stagnation.pdf}
+  \includegraphics[width=0.8 \columnwidth]{Image_Reconstruction/Stagnation.pdf}
   \caption{Successive iterations of the Error Reduction algorithm represented as
     vectors of different color. The algorithm stagnates on a local minimum due
     to the non convexity of the modulus constraint set.}
   \label{Fig:Stagnation}
 \end{figure}
+
+In 1982 Fienup introduced the Hybrid Input-Output(HIO) algorithm \cite{Fienup82}
+which is defined as:
+\begin{algorithm}
+\caption{Hybrid Input-Output Iteration}
+\begin{algorithmic}
+  \STATE $F_{i}(\mathbf S) \gets \mathscr{F}\{\rho_i(\mathbf r)\}$
+  \STATE $F_{i+1}(\mathbf S) \gets \sqrt{I(\mathbf S)} \frac{F_i(\mathbf
+    S)}{|F_i(\mathbf S)|}$
+  \STATE $\rho^{\prime}(\mathbf r) \gets \mathscr{F}^{-1}\{F_{i+1}(\mathbf S)\}$
+  \STATE $\rho_{i+1}(\mathbf r) \gets \Pi(\mathbf r) \rho^{\prime}(\mathbf r) +
+  (1-\Pi(\mathbf r)) (\rho_i(\mathbf r)-\beta \rho^{\prime}(\mathbf r))$
+%  \STATE $\rho_{i+1}(\mathbf r) \gets \rho^{\prime}(\mathbf r) - \left(1-\Pi(\mathbf r)\right) \beta \rho^{\prime}(\mathbf r)$
+\end{algorithmic}
+\end{algorithm}
+
+which can also be represented with projection operators as \cite{Thiebault_Thesis}:
+\begin{equation}
+  \rho_{i+1} = \rho_{i} + \beta\left[P_s((1+\beta^{-1})P_m(\rho_i)-\beta^{-1}
+    \rho_{i}) -P_m(\rho_i)\right] .
+\end{equation}
+
+This means that the change in each iteration is a sum of a point projected onto the
+support constraint minus a point projected onto the modulus constraint all
+scaled by a relaxation factor $\beta$ (see Fig. \ref{Fig:HIO_Iteration}). If the
+separation between the two 
+projections is large the step length will be large and the algorithm will
+probably explore some other areas. This means that the algorithm is quite good
+at getting out of local minima, but also means that if the sets never get too
+close (due to noisy data for example), this algorithm will have a difficult time
+keeping close to the best solution, even though it might pass through it.
+
+\begin{figure}[h]
+\centering
+  \includegraphics[width=0.9 \columnwidth]{Image_Reconstruction/hio_iteration.pdf}
+  \caption{One iteration of the HIO algorithm assuming the origin is at
+    $\rho_i$. Note that the iteration does not end at the surface of the
+    constraint set.}
+  \label{Fig:HIO_Iteration}
+\end{figure}
+
+The HIO algorithm was a tremendous improvement and it still widely used
+today. It is probably the most popular algorithm for phase retrieval. 
+
+\subsection{Shrinkwrap algorithm}
+
+While the HIO algorithm produces very good results when a tight support is known
+for many applications it is hard to know in advance the shape of the support,
+and a support that is too large can make phasing impossible in practise. 
+
+In YEAR Marchesini \cite{MarchesiniYEAR} introduces the {\em Shrinkwrap
+  algorithm} which does not require the support function as input and instead
+tries to deduce it during the reconstruction. 
+
+{\em TALK ABOUT HIO}
+{\em TALK ABOUT SHRINKWRAP}
 %%% Local Variables: 
 %%% mode: latex
 %%% TeX-master: "../Thesis"
