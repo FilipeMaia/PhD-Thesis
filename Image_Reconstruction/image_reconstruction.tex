@@ -203,12 +203,19 @@ While the HIO algorithm produces very good results when a tight support is known
 for many applications it is hard to know in advance the shape of the support,
 and a support that is too large can make phasing impossible in practise. 
 
-In YEAR Marchesini \cite{MarchesiniYEAR} introduces the {\em Shrinkwrap
+In YEAR Marchesini \cite{MarchesiniYEAR} introduced the {\em Shrinkwrap
   algorithm} which does not require the support function as input and instead
-tries to deduce it during the reconstruction. 
+tries to deduce it during the reconstruction. It does so by starting with a
+support derived from the autocorrelation, where all pixels above a certain
+threshold are included in the support. It then refines the support every $n$
+iterations by bluring the current best guess of the object and keeping in the
+support only the pixels that are above a certain threshold of the maximum pixel
+value. The value of $n$ is typically a couple dozen iterations. The idea of the
+algorithm is that even with a bad support some features of the objects will
+start to show up, so it makes use of those recovered features to improve the
+support. This algorithm has been remarkadly successful in reconstructing several
+experimental datasets \cite{Piramid,Cowboys,Gel Foam, Pacman}.
 
-{\em TALK ABOUT HIO}
-{\em TALK ABOUT SHRINKWRAP}
 %%% Local Variables: 
 %%% mode: latex
 %%% TeX-master: "../Thesis"
