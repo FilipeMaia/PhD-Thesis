@@ -40,12 +40,12 @@ If nothing about the object being imaged is known then the problem is
 undetermined, as for a pattern with $N$ pixels we have $2N$ unknowns (the real and
 imaginary part of the object) but only $N$ constraints. But if we known that the object is isolated, meaning the
 object is surrounded by a constant $\rho$ (e.g., sample in vacuum where
-surrounding $\rho = 0$), then in some circunstances it is possible to solve this
+surrounding $\rho = 0$), then in some circumstances it is possible to solve this
 problem. The number of pixels of the object must at least be half of that of the
 diffraction pattern for the number of unknowns match the number of
 constraints, that is the oversampling ratio (see Fig. \ref{Fig:OversamplingRatio}) of the image must be bigger than
 two, or equivalently the object must occupy less than half of the field of
-view. We will call images which fullfill this condition {\em oversampled}.
+view. We will call images which fulfill this condition {\em oversampled}.
 
 But this is not enough being able to solve the problem. In fact it
 has long been known that the problem is often undetermined in one dimension
@@ -74,9 +74,9 @@ dimensional space, which is a class of problems that is very challenging.
 In 1972 Gerchberg and Saxton \cite{Gerchberg72} introduced an iterative algorithm to solve
 a related problem, that of obtaining phase information using both the
 diffraction pattern and an electron micrograph of a sample. The iteration starts
-by fourier transforming the real space input, $\rho_i(\mathbf x)$. Then it
+by Fourier transforming the real space input, $\rho_i(\mathbf x)$. Then it
 replaces the resulting amplitudes with the square root of the intensities,
-$I(\mathbf S)$. The result is then back fourier transformed and the amplitudes
+$I(\mathbf S)$. The result is then back Fourier transformed and the amplitudes
 of the resulting images are replaced by the ones from the electron micrograph $M(\mathbf r)$.
 \begin{algorithm}
 \caption{Gerchberg-Saxton Iteration}
@@ -115,7 +115,7 @@ local minima and cannot find the global minimum.
 In 1984 Levi and Stark realized that the above iterations can be
 interpreted as projections in Hilbert space \cite{Levi84}. This provides a
 particularly powerful method for trying to understand these algorithms.
-Lets call the replacement of the fourier space amplitudes with the square root of
+Lets call the replacement of the Fourier space amplitudes with the square root of
 the intensities the modulus projection, $P_m$, and the replacement of the image
 outside of the support with 0 the support projection, $P_s$. If one treats the
 real space image as a vector in a high dimensional space, with one dimension per
@@ -208,13 +208,13 @@ In YEAR Marchesini \cite{MarchesiniYEAR} introduced the {\em Shrinkwrap
 tries to deduce it during the reconstruction. It does so by starting with a
 support derived from the autocorrelation, where all pixels above a certain
 threshold are included in the support. It then refines the support every $n$
-iterations by bluring the current best guess of the object and keeping in the
+iterations by blurring the current best guess of the object and keeping in the
 support only the pixels that are above a certain threshold of the maximum pixel
 value. The value of $n$ is typically a couple dozen iterations. The idea of the
 algorithm is that even with a bad support some features of the objects will
 start to show up, so it makes use of those recovered features to improve the
-support. This algorithm has been remarkadly successful in reconstructing several
-experimental datasets \cite{Piramid,Cowboys,Gel Foam, Pacman}.
+support. This algorithm has been remarkably successful in reconstructing several
+experimental data sets \cite{Piramid,Cowboys,Gel Foam, Pacman}.
 
 %%% Local Variables: 
 %%% mode: latex

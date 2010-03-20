@@ -87,7 +87,7 @@ f(x) \star f(x) & = & \mathscr{F}^{-1}\left\{\mathscr{F}f(x)
 
 In practice we will be dealing with signals which are not continuous, but
 discrete, as most signal recording is done digitally nowadays and to be able to
-performe numerical computations with any input we first need to digitize
+perform numerical computations with any input we first need to digitize
 it. Fortunately there is a discrete analogue of the Fourier transform called
 the discrete Fourier transform (DFT). The one dimensional discrete Fourier
 transform of a vector $\mathbf x$ of length N is defined by
@@ -124,7 +124,7 @@ consequences.
 \section{Sampling and oversampling}
 
 
-An arbitrary bandlimited signal $f(x)$ with bandwidth $2B$, meaning a signal which has
+An arbitrary band-limited signal $f(x)$ with bandwidth $2B$, meaning a signal which has
 $\hat{f}(x) = 0$ for every $|x| > B$, can be perfectly reconstructed from
 the same signal sampled in steps of length smaller or equal to $1/2B$. $2B$ is
 known as the {\em Nyquist rate}. This derives from the fact that the continuous
@@ -144,7 +144,7 @@ where $\delta(x)$ represents the Dirac delta function.
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.7 \columnwidth]{Fourier_Theory/Sampling2.png}
-  \caption{Reconstruction of a bandlimited signal from discrete samples taken at
+  \caption{Reconstruction of a band-limited signal from discrete samples taken at
     a frequency higher than the Nyquist rate.}\
   \label{Fig:Sampling}
 \end{figure}
