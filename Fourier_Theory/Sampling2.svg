@@ -10,7 +10,7 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="Sampling.svg"
+   sodipodi:docname="Sampling2.svg"
    inkscape:version="0.47 r22583"
    version="1.1"
    id="svg3087"
@@ -24,15 +24,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="-361.08208"
-     inkscape:cy="400.41893"
+     inkscape:cx="118.81433"
+     inkscape:cy="283.04167"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1918"
      inkscape:window-height="1168"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-x="135"
+     inkscape:window-y="112"
      inkscape:window-maximized="1" />
   <defs
      id="defs3089">
@@ -768,9 +768,12 @@
      inkscape:groupmode="layer"
      id="layer1">
     <g
-       transform="matrix(1.25,0,0,-1.25,-198.50552,778.65641)"
+       transform="matrix(1.25,0,0,-1.25,373.24082,1158.4738)"
        inkscape:label="Window"
-       id="g3283">
+       id="g3283"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <g
          transform="matrix(0.0625,0,0,-0.0625,-47,210.25)"
          id="g3285">
@@ -868,8 +871,11 @@
       </g>
     </g>
     <g
-       transform="matrix(0.5,0,0,0.5,-198.03632,372.18707)"
-       id="g25577">
+       transform="matrix(0.5,0,0,0.5,373.71002,752.00442)"
+       id="g25577"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <g
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
          id="g25579"
@@ -908,7 +914,10 @@
     <g
        id="g4746"
        inkscape:label="Signal"
-       transform="matrix(1.25,0,0,-1.25,-664.30133,2.4711914)">
+       transform="matrix(1.25,0,0,-1.25,-329.80015,382.28855)"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <g
          id="g4748"
          transform="matrix(0.0625,0,0,-0.0625,-47,197.3125)">
@@ -1079,7 +1088,10 @@
     </g>
     <g
        id="g7505"
-       transform="matrix(0.5,0,0,0.5,-651.14267,-418.51601)">
+       transform="matrix(0.5,0,0,0.5,-316.64148,-38.698656)"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <g
          word-spacing="normal"
          letter-spacing="normal"
@@ -1107,9 +1119,12 @@
            d="m 547.4,418.45 -0.01,0.37 0,0.39 -0.01,0.39 -0.01,0.41 -0.04,0.84 -0.06,0.88 -0.09,0.92 -0.1,0.94 -0.14,0.98 -0.16,1 -0.2,1.02 -0.23,1.04 -0.27,1.05 -0.3,1.06 -0.35,1.06 -0.39,1.07 -0.22,0.53 -0.22,0.54 -0.24,0.53 -0.25,0.53 c -2.99,6.12 -7.27,9.36 -7.77,9.36 -0.3,0 -0.5,-0.2 -0.5,-0.5 0,-0.15 0,-0.25 0.94,-1.15 4.89,-4.92 7.73,-12.85 7.73,-23.26 0,-8.52 -1.85,-17.28 -8.02,-23.56 -0.65,-0.6 -0.65,-0.69 -0.65,-0.85 0,-0.29 0.2,-0.49 0.5,-0.49 0.5,0 4.98,3.38 7.92,9.71 2.54,5.48 3.14,11.01 3.14,15.19 z"
            style="fill:#000000;stroke-width:0" /></g>    </g>
     <g
-       transform="matrix(1.25,0,0,-1.25,-664.30133,268.42239)"
+       transform="matrix(1.25,0,0,-1.25,-329.80015,648.23974)"
        inkscape:label="Shah"
-       id="g3441">
+       id="g3441"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <g
          transform="matrix(0.0625,0,0,-0.0625,-47,204.4375)"
          id="g3443">
@@ -1204,7 +1219,10 @@
     </g>
     <g
        id="g9558"
-       transform="matrix(0.5,0,0,0.5,-408.63924,-49.18167)">
+       transform="matrix(0.5,0,0,0.5,-74.138063,330.63568)"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <image
          xlink:href="file:///home/filipe/Documents/Papers/Hawk/inkscape_pasted_image_20100301_142007.png"
          width="71.260994"
@@ -1240,9 +1258,12 @@
              style="fill:#000000;stroke-width:0" /></g>      </g>
     </g>
     <g
-       transform="matrix(1.25,0,0,-1.25,-664.30133,545.46729)"
+       transform="matrix(1.25,0,0,-1.25,-329.80015,925.28464)"
        inkscape:label="SampSignal"
-       id="g4350">
+       id="g4350"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <g
          transform="matrix(0.0625,0,0,-0.0625,-47,197.3125)"
          id="g4352">
@@ -1341,7 +1362,10 @@
     </g>
     <g
        id="g29319"
-       transform="matrix(0.5,0,0,0.5,-374.47601,91.873664)">
+       transform="matrix(0.5,0,0,0.5,-39.974831,471.69102)"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <g
          id="g9574"
          transform="translate(-18.182746,290.92393)">
@@ -1410,9 +1434,12 @@
              style="fill:#000000;stroke-width:0" /></g>      </g>
     </g>
     <g
-       transform="matrix(1.25,0,0,-1.25,-664.30133,785.53679)"
+       transform="matrix(1.25,0,0,-1.25,-329.80015,1165.3541)"
        inkscape:label="FWindow"
-       id="g4505">
+       id="g4505"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <g
          transform="matrix(0.0625,0,0,-0.0625,-47,197.3125)"
          id="g4507">
@@ -1663,7 +1690,10 @@
     </g>
     <g
        id="g19951"
-       transform="matrix(0.5,0,0,0.5,-665.22731,372.18707)">
+       transform="matrix(0.5,0,0,0.5,-330.72613,752.00442)"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <g
          word-spacing="normal"
          letter-spacing="normal"
@@ -1705,7 +1735,10 @@
     <g
        id="g5512"
        inkscape:label="FSignal"
-       transform="matrix(1.25,0,0,-1.25,-198.50552,-10.57821)">
+       transform="matrix(1.25,0,0,-1.25,373.24082,369.23914)"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <g
          id="g5514"
          transform="matrix(0.0625,0,0,-0.0625,-47,210.25)">
@@ -1803,8 +1836,11 @@
       </g>
     </g>
     <g
-       transform="matrix(0.5,0,0,0.5,-184.28386,-415.80273)"
-       id="g27094">
+       transform="matrix(0.5,0,0,0.5,387.46248,-35.985376)"
+       id="g27094"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <g
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:none;stroke:#000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
          id="g27096"
@@ -1820,7 +1856,7 @@
          letter-spacing="normal"
          word-spacing="normal"><polygon
            style="fill:#000000;stroke-width:0"
-           points="484.18,445.9 485.08,446.8 478.45,453.57 471.78,446.8 472.68,445.9 478.45,450.98 "
+           points="478.45,453.57 471.78,446.8 472.68,445.9 478.45,450.98 484.18,445.9 485.08,446.8 "
            id="polygon27098" /><path
            style="fill:#000000;stroke-width:0"
            d="m 474.28,425.93 h 4.29 c 0.99,0 1.49,0 1.49,0.99 0,0.55 -0.5,0.55 -1.35,0.55 h -4.13 l 1.04,5.68 c 0.2,1.05 0.9,4.58 1.2,5.18 0.45,0.94 1.3,1.69 2.34,1.69 0.2,0 1.5,0 2.45,-0.9 -2.2,-0.19 -2.7,-1.94 -2.7,-2.68 0,-1.15 0.9,-1.75 1.85,-1.75 1.29,0 2.74,1.1 2.74,2.99 0,2.29 -2.29,3.44 -4.34,3.44 -1.69,0 -4.83,-0.9 -6.32,-5.83 -0.3,-1.05 -0.45,-1.54 -1.65,-7.82 h -3.43 c -0.95,0 -1.5,0 -1.5,-0.95 0,-0.59 0.45,-0.59 1.4,-0.59 h 3.29 l -3.74,-19.68 c -0.9,-4.83 -1.75,-9.37 -4.33,-9.37 -0.2,0 -1.45,0 -2.4,0.9 2.29,0.15 2.74,1.94 2.74,2.69 0,1.15 -0.89,1.74 -1.84,1.74 -1.29,0 -2.74,-1.09 -2.74,-2.98 0,-2.25 2.19,-3.44 4.24,-3.44 2.73,0 4.73,2.94 5.62,4.83 1.6,3.14 2.74,9.17 2.79,9.51 z"
@@ -1835,9 +1871,12 @@
            d="m 543.4,418.45 -0.01,0.37 0,0.39 -0.01,0.39 -0.01,0.41 -0.04,0.84 -0.06,0.88 -0.09,0.92 -0.1,0.94 -0.14,0.98 -0.16,1 -0.2,1.02 -0.23,1.04 -0.27,1.05 -0.3,1.06 -0.35,1.06 -0.39,1.07 -0.22,0.53 -0.22,0.54 -0.24,0.53 -0.25,0.53 c -2.99,6.12 -7.27,9.36 -7.77,9.36 -0.3,0 -0.5,-0.2 -0.5,-0.5 0,-0.15 0,-0.25 0.94,-1.15 4.89,-4.92 7.73,-12.85 7.73,-23.26 0,-8.52 -1.85,-17.28 -8.02,-23.56 -0.65,-0.6 -0.65,-0.69 -0.65,-0.85 0,-0.29 0.2,-0.49 0.5,-0.49 0.5,0 4.98,3.38 7.92,9.71 2.54,5.48 3.14,11.01 3.14,15.19 z"
            id="path27106" /></g>    </g>
     <g
-       transform="matrix(1.25,0,0,-1.25,-198.50552,258.5609)"
+       transform="matrix(1.25,0,0,-1.25,373.24082,638.37825)"
        inkscape:label="FShah"
-       id="g3968">
+       id="g3968"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <g
          transform="matrix(0.0625,0,0,-0.0625,-47,210.25)"
          id="g3970">
@@ -1952,7 +1991,10 @@
     </g>
     <g
        id="g29257"
-       transform="matrix(0.5,0,0,0.5,-190.83662,-58.409519)">
+       transform="matrix(0.5,0,0,0.5,380.90972,321.40784)"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <image
          xlink:href="file:///home/filipe/Documents/Papers/Hawk/inkscape_pasted_image_20100301_141931.png"
          width="74.626129"
@@ -1988,9 +2030,12 @@
              id="path28534" /></g>      </g>
     </g>
     <g
-       transform="matrix(1.25,0,0,-1.25,-664.30133,1068.4634)"
+       transform="matrix(1.25,0,0,-1.25,-329.80015,1448.2808)"
        inkscape:label="Signal"
-       id="g4138">
+       id="g4138"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <g
          transform="matrix(0.0625,0,0,-0.0625,-47,197.3125)"
          id="g4140">
@@ -2161,7 +2206,10 @@
     </g>
     <g
        id="g30886"
-       transform="matrix(0.5,0,0,0.5,-335.23398,351.92294)">
+       transform="matrix(0.5,0,0,0.5,-0.73280294,731.74029)"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <g
          id="g30040"
          transform="translate(-555.35714,578.21429)">
@@ -2278,9 +2326,12 @@
       </g>
     </g>
     <g
-       transform="matrix(1.25,0,0,-1.25,-198.50551,527.7001)"
+       transform="matrix(1.25,0,0,-1.25,373.24083,907.51745)"
        inkscape:label="FSampSignal"
-       id="g5085">
+       id="g5085"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <g
          transform="matrix(0.0625,0,0,-0.0625,-47,210.25)"
          id="g5087">
@@ -2779,7 +2830,10 @@
     </g>
     <g
        id="g32489"
-       transform="matrix(0.5,0,0,0.5,244.46379,134.80263)">
+       transform="matrix(0.5,0,0,0.5,816.21013,514.61998)"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <g
          transform="translate(-813.06373,189.17534)"
          id="g29286">
@@ -2835,7 +2889,7 @@
            letter-spacing="normal"
            word-spacing="normal"><polygon
              style="fill:#000000;stroke-width:0"
-             points="471.78,446.8 472.68,445.9 478.45,450.98 484.18,445.9 485.08,446.8 478.45,453.57 "
+             points="478.45,450.98 484.18,445.9 485.08,446.8 478.45,453.57 471.78,446.8 472.68,445.9 "
              id="polygon31713" /><path
              style="fill:#000000;stroke-width:0"
              d="m 474.28,425.93 h 4.29 c 0.99,0 1.49,0 1.49,0.99 0,0.55 -0.5,0.55 -1.35,0.55 h -4.13 l 1.04,5.68 c 0.2,1.05 0.9,4.58 1.2,5.18 0.45,0.94 1.3,1.69 2.34,1.69 0.2,0 1.5,0 2.45,-0.9 -2.2,-0.19 -2.7,-1.94 -2.7,-2.68 0,-1.15 0.9,-1.75 1.85,-1.75 1.29,0 2.74,1.1 2.74,2.99 0,2.29 -2.29,3.44 -4.34,3.44 -1.69,0 -4.83,-0.9 -6.32,-5.83 -0.3,-1.05 -0.45,-1.54 -1.65,-7.82 h -3.43 c -0.95,0 -1.5,0 -1.5,-0.95 0,-0.59 0.45,-0.59 1.4,-0.59 h 3.29 l -3.74,-19.68 c -0.9,-4.83 -1.75,-9.37 -4.33,-9.37 -0.2,0 -1.45,0 -2.4,0.9 2.29,0.15 2.74,1.94 2.74,2.69 0,1.15 -0.89,1.74 -1.84,1.74 -1.29,0 -2.74,-1.09 -2.74,-2.98 0,-2.25 2.19,-3.44 4.24,-3.44 2.73,0 4.73,2.94 5.62,4.83 1.6,3.14 2.74,9.17 2.79,9.51 z"
@@ -2854,9 +2908,12 @@
              id="path31723" /></g>      </g>
     </g>
     <g
-       transform="matrix(1.25,0,0,-1.25,-198.50552,1028.6027)"
+       transform="matrix(1.25,0,0,-1.25,373.24082,1408.4201)"
        inkscape:label="FSignal"
-       id="g4927">
+       id="g4927"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <g
          transform="matrix(0.0625,0,0,-0.0625,-47,210.25)"
          id="g4929">
@@ -2955,7 +3012,10 @@
     </g>
     <g
        id="g32540"
-       transform="matrix(0.5,0,0,0.5,332.05162,401.11281)">
+       transform="matrix(0.5,0,0,0.5,903.79796,780.93016)"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <g
          transform="translate(-934.49873,482.8757)"
          id="g30837">
@@ -3052,7 +3112,7 @@
              letter-spacing="normal"
              word-spacing="normal"><polygon
                style="fill:#000000;stroke-width:0"
-               points="471.78,446.8 472.68,445.9 478.45,450.98 484.18,445.9 485.08,446.8 478.45,453.57 "
+               points="478.45,450.98 484.18,445.9 485.08,446.8 478.45,453.57 471.78,446.8 472.68,445.9 "
                id="polygon32526" /><path
                style="fill:#000000;stroke-width:0"
                d="m 474.28,425.93 h 4.29 c 0.99,0 1.49,0 1.49,0.99 0,0.55 -0.5,0.55 -1.35,0.55 h -4.13 l 1.04,5.68 c 0.2,1.05 0.9,4.58 1.2,5.18 0.45,0.94 1.3,1.69 2.34,1.69 0.2,0 1.5,0 2.45,-0.9 -2.2,-0.19 -2.7,-1.94 -2.7,-2.68 0,-1.15 0.9,-1.75 1.85,-1.75 1.29,0 2.74,1.1 2.74,2.99 0,2.29 -2.29,3.44 -4.34,3.44 -1.69,0 -4.83,-0.9 -6.32,-5.83 -0.3,-1.05 -0.45,-1.54 -1.65,-7.82 h -3.43 c -0.95,0 -1.5,0 -1.5,-0.95 0,-0.59 0.45,-0.59 1.4,-0.59 h 3.29 l -3.74,-19.68 c -0.9,-4.83 -1.75,-9.37 -4.33,-9.37 -0.2,0 -1.45,0 -2.4,0.9 2.29,0.15 2.74,1.94 2.74,2.69 0,1.15 -0.89,1.74 -1.84,1.74 -1.29,0 -2.74,-1.09 -2.74,-2.98 0,-2.25 2.19,-3.44 4.24,-3.44 2.73,0 4.73,2.94 5.62,4.83 1.6,3.14 2.74,9.17 2.79,9.51 z"
@@ -3071,5 +3131,130 @@
                id="path32536" /></g>        </g>
       </g>
     </g>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Roman No9 L;-inkscape-font-specification:Nimbus Roman No9 L"
+       x="-231.62798"
+       y="88.432999"
+       id="text10793"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan10795"
+         x="-231.62798"
+         y="88.432999">Real Space</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Roman No9 L;-inkscape-font-specification:Nimbus Roman No9 L"
+       x="449.24738"
+       y="88.432999"
+       id="text10797"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan10799"
+         x="449.24738"
+         y="88.432999">Fourier Space</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 204.16955,94.954606 0,1341.712894"
+       id="path10801"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <text
+       xml:space="preserve"
+       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Roman No9 L;-inkscape-font-specification:Nimbus Roman No9 L"
+       x="-493.05627"
+       y="278.58536"
+       id="text11313"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan11315"
+         x="-493.05627"
+         y="278.58536">Original</tspan><tspan
+         sodipodi:role="line"
+         x="-493.05627"
+         y="323.58536"
+         id="tspan11341">signal</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Roman No9 L;-inkscape-font-specification:Nimbus Roman No9 L"
+       x="-493.02649"
+       y="527.08289"
+       id="text11317"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan11319"
+         x="-493.02649"
+         y="527.08289">Sampling</tspan><tspan
+         sodipodi:role="line"
+         x="-493.02649"
+         y="572.08289"
+         id="tspan11321">function</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Roman No9 L;-inkscape-font-specification:Nimbus Roman No9 L"
+       x="-493.40448"
+       y="805.88495"
+       id="text11323"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan11325"
+         x="-493.40448"
+         y="805.88495">Sampled</tspan><tspan
+         sodipodi:role="line"
+         x="-493.40448"
+         y="850.88495"
+         id="tspan11327">signal</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Roman No9 L;-inkscape-font-specification:Nimbus Roman No9 L"
+       x="-492.86444"
+       y="1108.9308"
+       id="text11329"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan11331"
+         x="-492.86444"
+         y="1108.9308">Interpolation</tspan><tspan
+         sodipodi:role="line"
+         x="-492.86444"
+         y="1153.9308"
+         id="tspan11333">kernel</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Roman No9 L;-inkscape-font-specification:Nimbus Roman No9 L"
+       x="-492.95447"
+       y="1335.2048"
+       id="text11335"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/Fourier_Theory/Sampling2.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
+         sodipodi:role="line"
+         id="tspan11337"
+         x="-492.95447"
+         y="1335.2048">Recovered</tspan><tspan
+         sodipodi:role="line"
+         x="-492.95447"
+         y="1380.2048"
+         id="tspan11339">signal</tspan></text>
   </g>
 </svg>

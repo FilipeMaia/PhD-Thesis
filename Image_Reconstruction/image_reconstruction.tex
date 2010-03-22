@@ -2,7 +2,10 @@
 
 In the previous chapter we have developed tools that allow us to predict
 and calculate the X-ray diffraction pattern from an arbitrary electron density,
-using mild assumptions. In this chapter we will try to tackle the {\em inverse
+using mild assumptions, namely that we are sufficiently far from the scatterer
+that the Fraunhofer approximation holds and that there is no multiple
+scattering.
+In this chapter we will try to tackle the {\em inverse
   problem}, that is, from an arbitrary diffraction pattern we will try to
 recover the electron density that gave rise to it.
 \section{The Phase Problem}
@@ -37,19 +40,20 @@ phases carry more structural information than the amplitudes (see Fig. \ref{Fig:
 \end{figure}
 
 If nothing about the object being imaged is known then the problem is
-undetermined, as for a pattern with $N$ pixels we have $2N$ unknowns (the real and
-imaginary part of the object) but only $N$ constraints. But if we known that the object is isolated, meaning the
-object is surrounded by a constant $\rho$ (e.g., sample in vacuum where
+undetermined. For for a pattern with $N$ pixels we have $2N$ unknowns (the real and
+imaginary part of the object) but only $N$ constraints. But if we know that the object is isolated, meaning the
+object is surrounded by a constant $\rho$ (e.g., sample in vacuum with a
 surrounding $\rho = 0$), then in some circumstances it is possible to solve this
 problem. The number of pixels of the object must at least be half of that of the
-diffraction pattern for the number of unknowns match the number of
-constraints, that is the oversampling ratio (see Fig. \ref{Fig:OversamplingRatio}) of the image must be bigger than
+diffraction pattern for the number of unknowns to match the number of
+constraints, that is the oversampling ratio (see
+Fig. \ref{Fig:OversamplingRatio}) of the image must be equal to or bigger than
 two, or equivalently the object must occupy less than half of the field of
 view. We will call images which fulfill this condition {\em oversampled}.
 
 But this is not enough being able to solve the problem. In fact it
-has long been known that the problem is often undetermined in one dimension
-\cite{Walther63}. Fortunately for higher dimensions is has been proven it has
+has long been known that the problem is often undetermined in the one dimension case
+\cite{Walther63}. Fortunately for higher dimensions it has
 been proven that most oversampled patterns have unique solutions
 \cite{Bruck79}. This difference derives from the fact that one-dimensional
 polynomials are factorizable unlike two or higher dimension ones.
@@ -57,7 +61,7 @@ polynomials are factorizable unlike two or higher dimension ones.
 \section{Image Reconstruction Algorithms}
 
 Knowing that the two or higher dimensional phasing problem for oversampled
-patterns has a unique solution in most cases is a necessary starting point to
+patterns has a unique solution in most cases can serve as a starting point to
 solve the phase problem, but a method to find that unique solution is still
 necessary. The phase problem is remarkably difficult since it is neither a
 linear nor a convex problem. That makes it a nonconvex problem in a very high
@@ -89,12 +93,12 @@ of the resulting images are replaced by the ones from the electron micrograph $M
 \end{algorithmic}
 \end{algorithm}
 
-In 1978 Fienup \cite{Fienup78}, inspired by the above algorithm, introduced the error
+In 1978 Fienup \cite{Fienup78}, inspired by the above algorithm, introduced on error
 reduction algorithm to solve the phasing problem. Instead of using the electron
-micrograph as constraints in real space Fienup introduces the concept of {\em
+micrograph as constraints in real space Fienup introduces the concept of a {\em
   support} function, $\Pi(\mathbf r)$, which is equal to 1 where the
-object is allowed the reside and 0 otherwise. 
-The iteration is analogue to the Gerchberg-Saxton but the last step is replaced
+object is allowed to reside and 0 otherwise. 
+The iteration is analogous to the Gerchberg-Saxton Iteration but the last step is replaced
 by setting all points outside the support to 0.
 \begin{algorithm}
 \caption{Error Reduction Iteration}
@@ -107,7 +111,10 @@ by setting all points outside the support to 0.
 \end{algorithm}
 
 By applying this procedure iteratively it is possible to recover the correct
-solution. Unfortunately in practise the algorithm easily gets stuck in
+solution. 
+Unfortunately
+often 
+ in practise the algorithm easily gets stuck in
 local minima and cannot find the global minimum.
 
 \subsection{Iterations as Projections}
@@ -137,11 +144,11 @@ the real part and the imaginary part (see Fig. \ref{Fig:Projections}).
 Due to the distance preserving property of the Fourier transform the modulus
 projection is also a projection in real space. The biggest difference between
 the two projection is that while the support constraint set is convex, the
-modulus constraint is not, not all points between two points of the modulus
+modulus constraint is not, that is to say, not all points between two points of the modulus
 constraint set belong to the modulus constraint set.
 
-In this framework of projections the Error Reduction algorithm is simply $P_m$
-followed by $P_s$. The fact that it stagnates can then be easily understood in
+In this framework of projections the Error Reduction algorithm is simply the
+modulus projection ($P_m$) followed by the support projection ($P_s$). The fact that it stagnates can then be easily understood in
 connection to the non convexity of the modulus constraint as
 Fig. \ref{Fig:Stagnation} illustrates.
 
@@ -194,14 +201,14 @@ keeping close to the best solution, even though it might pass through it.
   \label{Fig:HIO_Iteration}
 \end{figure}
 
-The HIO algorithm was a tremendous improvement and it still widely used
+The HIO algorithm was a tremendous improvement and it is still widely used
 today. It is probably the most popular algorithm for phase retrieval. 
 
 \subsection{Shrinkwrap algorithm}
 
 While the HIO algorithm produces very good results when a tight support is known
 for many applications it is hard to know in advance the shape of the support,
-and a support that is too large can make phasing impossible in practise. 
+and a support that is too large can make phasing impossible in practice. 
 
 In YEAR Marchesini \cite{MarchesiniYEAR} introduced the {\em Shrinkwrap
   algorithm} which does not require the support function as input and instead
@@ -209,7 +216,7 @@ tries to deduce it during the reconstruction. It does so by starting with a
 support derived from the autocorrelation, where all pixels above a certain
 threshold are included in the support. It then refines the support every $n$
 iterations by blurring the current best guess of the object and keeping in the
-support only the pixels that are above a certain threshold of the maximum pixel
+support only those pixels that are above a certain threshold of the maximum pixel
 value. The value of $n$ is typically a couple dozen iterations. The idea of the
 algorithm is that even with a bad support some features of the objects will
 start to show up, so it makes use of those recovered features to improve the

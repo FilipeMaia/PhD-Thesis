@@ -30,7 +30,7 @@ The following properties of the Fourier transform will be important for the rest
 \begin{equation}
 \mathscr{F}\left\{f(a x)\right\} = \frac{1}{|a|}\hat{f}(\frac{x}{a}) 
 \end{equation}
-where $a$ is a real number different than zero. This is known as the scaling
+where $a$ is a real number different from zero. This is known as the scaling
 property or theorem.
 
 \item The Fourier transform of a real function $f(x)$ is a hermitian function,  
@@ -66,7 +66,7 @@ is known as the convolution theorem.
 
 \item The cross-correlation of any two functions is equal to the inverse Fourier
   transform of the product of the forward Fourier transform of one function with
-  the complex conjugate of the forward Fourier transform the other function,
+  the complex conjugate of the forward Fourier transform of the other function,
 \begin{eqnarray}
 f(x) \star g(x) & = & \int f(\tau) g(x+\tau) \, d\tau \nonumber \\ 
 & = & \mathscr{F}^{-1}\left\{\mathscr{F}f(x) \times \overline{\mathscr{F}g(x)}\right\}
@@ -112,7 +112,7 @@ counterpart, in particular it's a distance preserving transform, that is the dis
   |\mathscr{F}(x)-\mathscr{F}(y)| = |(x-y)|
 \end{equation}
 which follows from both the linearity of the transform and Parseval's theorem.
-It also also fulfills the convolution theorem if we define the discrete
+It also fulfills the convolution theorem if we define the discrete
 convolution as
 \begin{equation}
   (\mathbf a * \mathbf b)_n = \sum \limits_{m = 0}^{N-1} \mathbf a_m 
@@ -126,10 +126,10 @@ consequences.
 
 An arbitrary band-limited signal $f(x)$ with bandwidth $2B$, meaning a signal which has
 $\hat{f}(x) = 0$ for every $|x| > B$, can be perfectly reconstructed from
-the same signal sampled in steps of length smaller or equal to $1/2B$. $2B$ is
+the same signal sampled in steps of length smaller or equal to $1/2B$ \cite{Shanon}. $2B$ is
 known as the {\em Nyquist rate}. This derives from the fact that the continuous
 Fourier transform of $f(x)$ can be exactly reconstructed from equidistant samples
-separated by a step $s < 1/2B$,
+separated by a step of length $s < 1/2B$,
 \begin{eqnarray}
 rect_B(q) & = & 
 \begin{cases}
@@ -143,9 +143,16 @@ where $\delta(x)$ represents the Dirac delta function.
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.7 \columnwidth]{Fourier_Theory/Sampling2.png}
+  \includegraphics[width=0.9 \columnwidth]{Fourier_Theory/Sampling2.png}
   \caption{Reconstruction of a band-limited signal from discrete samples taken at
-    a frequency higher than the Nyquist rate.}\
+    a frequency higher than the Nyquist rate. The signal $f(x)$ is multiplied
+    with the sampling function \Sha$(x)$ corresponding to sampling of the signal
+    by a pixel detector. This corresponds to replicating the spectrum of the
+    signal in Fourier space. Notice that there is no overlap of the replicated
+    spectra. It is then possible to recover the original signal by selecting the
+    original signal with an appropriate rectangular window function
+    rect$(q)$. In real space this corresponds to a convolution with the
+    corresponding sinc function sinc$(x)$.}
   \label{Fig:Sampling}
 \end{figure}
 
@@ -154,12 +161,22 @@ replicated in Fourier space. The distance between the replicas is proportional
 to the sampling frequency due to the scaling property of the Fourier
 transform. If the sampling frequency is below the Nyquist rate the spectra will
 overlap and a perfect reconstruct is no longer possible, a phenomenon known as
-aliasing. We call such a signal {\em undersampled}. If on the other hand
-the sampling frequency is higher than the Nyquist rate we call it {\em
-  oversampled} and we define {\em oversampling ratio}, $\sigma$, as the ratio between the
+aliasing (see Fig. \ref{Fig:Undersampling}). We call such a signal {\em undersampled}. If on the other hand
+the sampling frequency is higher than the Nyquist rate, we call it {\em
+  oversampled} and we define the {\em oversampling ratio}, $\sigma$, as the ratio between the
 sampling frequency and the Nyquist rate, or equivalently the fraction between
 the center of two replicas of the spectrum in Fourier space and the region for
-which the spectrum is different than zero, as illustrated in figure \ref{Fig:OversamplingRatio}.
+which the spectrum is different from zero, as illustrated in figure \ref{Fig:OversamplingRatio}.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.9 \columnwidth]{Fourier_Theory/Sampling3.png}
+  \caption{Recovery of an undersampled band-limited signal leading to
+    aliasing. The process is analogous to \ref{Fig:Sampling} but with a sampling
+    frequency below the Nyquist rate. The spectrum of the signal will then
+    overlap in the sampled signal and a perfect reconstruction is no longer possible.}
+  \label{Fig:Undersampling}
+\end{figure}
 
 \begin{figure}[h]
   \centering
