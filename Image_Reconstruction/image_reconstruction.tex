@@ -53,9 +53,9 @@ view. We will call images which fulfill this condition {\em oversampled}.
 
 But this is not enough being able to solve the problem. In fact it
 has long been known that the problem is often undetermined in the one dimension case
-\cite{Walther63}. Fortunately for higher dimensions it has
+\cite{Walther1963Question}. Fortunately for higher dimensions it has
 been proven that most oversampled patterns have unique solutions
-\cite{Bruck79}. This difference derives from the fact that one-dimensional
+\cite{Bruck1979Ambiguity}. This difference derives from the fact that one-dimensional
 polynomials are factorizable unlike two or higher dimension ones.
 
 \section{Image Reconstruction Algorithms}
@@ -75,7 +75,7 @@ dimensional space, which is a class of problems that is very challenging.
   \label{Fig:Convexity}
 \end{figure}
 
-In 1972 Gerchberg and Saxton \cite{Gerchberg72} introduced an iterative algorithm to solve
+In 1972 Gerchberg and Saxton \cite{Gerchberg1972Practical} introduced an iterative algorithm to solve
 a related problem, that of obtaining phase information using both the
 diffraction pattern and an electron micrograph of a sample. The iteration starts
 by Fourier transforming the real space input, $\rho_i(\mathbf x)$. Then it
@@ -93,7 +93,7 @@ of the resulting images are replaced by the ones from the electron micrograph $M
 \end{algorithmic}
 \end{algorithm}
 
-In 1978 Fienup \cite{Fienup78}, inspired by the above algorithm, introduced on error
+In 1978 Fienup \cite{Fienup1978Reconstruction}, inspired by the above algorithm, introduced on error
 reduction algorithm to solve the phasing problem. Instead of using the electron
 micrograph as constraints in real space Fienup introduces the concept of a {\em
   support} function, $\Pi(\mathbf r)$, which is equal to 1 where the
@@ -120,7 +120,7 @@ local minima and cannot find the global minimum.
 \subsection{Iterations as Projections}
 
 In 1984 Levi and Stark realized that the above iterations can be
-interpreted as projections in Hilbert space \cite{Levi84}. This provides a
+interpreted as projections in Hilbert space \cite{Levi1984Image}. This provides a
 particularly powerful method for trying to understand these algorithms.
 Lets call the replacement of the Fourier space amplitudes with the square root of
 the intensities the modulus projection, $P_m$, and the replacement of the image
@@ -161,7 +161,7 @@ Fig. \ref{Fig:Stagnation} illustrates.
   \label{Fig:Stagnation}
 \end{figure}
 
-In 1982 Fienup introduced the Hybrid Input-Output(HIO) algorithm \cite{Fienup82}
+In 1982 Fienup introduced the Hybrid Input-Output(HIO) algorithm \cite{Fienup1982Phase}
 which is defined as:
 \begin{algorithm}
 \caption{Hybrid Input-Output Iteration}
@@ -176,7 +176,7 @@ which is defined as:
 \end{algorithmic}
 \end{algorithm}
 
-which can also be represented with projection operators as \cite{Thiebault_Thesis}:
+which can also be represented with projection operators as \cite{Thibault2007Algorithmic}:
 \begin{equation}
   \rho_{i+1} = \rho_{i} + \beta\left[P_s((1+\beta^{-1})P_m(\rho_i)-\beta^{-1}
     \rho_{i}) -P_m(\rho_i)\right] .
@@ -210,7 +210,7 @@ While the HIO algorithm produces very good results when a tight support is known
 for many applications it is hard to know in advance the shape of the support,
 and a support that is too large can make phasing impossible in practice. 
 
-In YEAR Marchesini \cite{MarchesiniYEAR} introduced the {\em Shrinkwrap
+In 2003 Marchesini \cite{Marchesini2003Xray} introduced the {\em Shrinkwrap
   algorithm} which does not require the support function as input and instead
 tries to deduce it during the reconstruction. It does so by starting with a
 support derived from the autocorrelation, where all pixels above a certain
@@ -221,7 +221,23 @@ value. The value of $n$ is typically a couple dozen iterations. The idea of the
 algorithm is that even with a bad support some features of the objects will
 start to show up, so it makes use of those recovered features to improve the
 support. This algorithm has been remarkably successful in reconstructing several
-experimental data sets \cite{Piramid,Cowboys,Gel Foam, Pacman}.
+experimental data sets \cite{Chapman2006Femtosecond,Chapman2006Highresolution,Barty2008Ultrafast,Barty2008Threedimensional}.
+
+\section{Image reconstruction software}
+
+Even though there is a large number of algorithms and techniques published for
+image reconstruction from CXDI diffraction patterns there is, to our knowledge, no publicly available
+software package that integrates all these tools in an easy to use package.
+
+Hawk, open source software package for data processing, being developed in Uppsala, is trying to fill
+this gap (Maia et al., 2010,submitted). It is publicly available under the GNU General Public License at
+http://xray.bmc.uu.se/hawk  and implements the following phasing algorithms:
+ HIO \cite{Fienup1982Phase}, RAAR \cite{Luke2005Relaxed}, difference map
+ \cite{Elser2003Phase}, HPR \cite{Bauschke2003Hybrid}, HAAR \cite{Bauschke2006Strongly}, ESPRESSO
+\cite{Marchesini2008Ab} and charge flipping
+\cite{Oszlanyi2004Ab,Oszlanyi2005It}. It is also
+capable to leverage graphic processing units using CUDA providing very large speedups over classic
+CPU based programs.
 
 %%% Local Variables: 
 %%% mode: latex
