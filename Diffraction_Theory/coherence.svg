@@ -16,7 +16,7 @@
    version="1.1"
    inkscape:version="0.47 r22583"
    style="display:inline"
-   sodipodi:docname="coherence.pdf"
+   sodipodi:docname="coherence.svg"
    inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300">
@@ -926,11 +926,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="430.75249"
-     inkscape:cy="533.86042"
+     inkscape:zoom="0.35"
+     inkscape:cx="547.33112"
+     inkscape:cy="550.13868"
      inkscape:document-units="px"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="layer6"
      showgrid="false"
      inkscape:window-width="1827"
      inkscape:window-height="1036"
@@ -947,7 +947,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -971,167 +971,167 @@
      style="display:inline">
     <path
        style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       d="m 837.037,978.62103 c -4.26678,0 23.61296,-893.379383 23.61296,-897.646163 L 389.91887,494.37851 837.037,978.62103 z"
+       d="m 842.10737,943.48216 c -4.26656,0.0447 14.25638,-893.577664 14.21169,-897.84421 l -466.37619,418.31037 452.1645,479.53384 z"
        id="rect19688"
        sodipodi:nodetypes="cccc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <path
-       style="fill:none;stroke:#c4a000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;display:inline;stroke-dasharray:none"
-       d="m 449,558.375 m 0,0 c 16.98753,-16.27605 27.5625,-39.20977 27.5625,-64.59375 0,-21.79648 -7.79061,-41.76597 -20.75,-57.28125"
+       style="fill:none;stroke:#c4a000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       d="m 451.36018,555.59185 m 0,0 c 16.14232,-17.11465 25.54346,-40.55401 24.25921,-65.90548 -1.10274,-21.76859 -9.89369,-41.31835 -23.62145,-56.1581"
        id="path19247"
        sodipodi:nodetypes="ccsc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <path
-       style="fill:none;stroke:#c4a000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;display:inline;stroke-dasharray:none"
-       d="m 509.65625,624.0625 c 34.66852,-32.61698 56.3125,-78.92472 56.3125,-130.28125 C 565.96875,449.3791 549.78832,408.76744 523,377.5"
+       style="fill:none;stroke:#c4a000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       d="m 515.25395,618.02098 c 32.97394,-34.32919 52.24736,-81.67266 49.64908,-132.96342 -2.24644,-44.34528 -20.4608,-84.08632 -48.79673,-113.95842"
        id="path19294"
        sodipodi:nodetypes="csc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <path
-       style="fill:none;stroke:#c4a000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;display:inline;stroke-dasharray:none"
-       d="m 570.3125,689.75 c 52.35106,-48.95477 85.09375,-118.63966 85.09375,-195.96875 0,-67.01152 -24.594,-128.26599 -65.21875,-175.28125 m 0,0"
+       style="fill:none;stroke:#c4a000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       d="m 579.14772,680.45011 c 49.80726,-51.54068 78.98245,-122.79287 75.07015,-200.02293 -3.39032,-66.9257 -31.05185,-126.85744 -74.00323,-171.75717 m 0,0"
        id="path19298"
        sodipodi:nodetypes="cscc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <path
-       style="fill:none;stroke:#c4a000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;display:inline;stroke-dasharray:none"
-       d="M 630.96875,755.4375 C 701.00307,690.1457 744.8125,597.0832 744.8125,493.78125 c 0,-89.62749 -32.96827,-171.549 -87.4375,-234.3125"
+       style="fill:none;stroke:#c4a000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       d="M 643.04167,742.89483 C 709.68298,674.14341 748.728,578.98365 743.50165,475.81399 738.96715,386.30128 701.89644,306.15264 644.32158,246.22528"
        id="path19300"
        sodipodi:nodetypes="csc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <path
-       style="fill:none;stroke:#729fcf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;display:inline;stroke-dasharray:none"
-       d="m 439.9375,548.53125 m 0,0 c 14.33992,-13.83497 23.28125,-33.25047 23.28125,-54.75 0,-18.42053 -6.54301,-35.30688 -17.4375,-48.46875"
+       style="fill:none;stroke:#729fcf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       d="m 441.81266,546.25117 m 0,0 c 13.62159,-14.54277 21.56919,-34.38577 20.48146,-55.85777 -0.93195,-18.39693 -8.3209,-34.93062 -19.86734,-47.52446"
        id="path19302"
        sodipodi:nodetypes="ccsc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <path
-       style="fill:none;stroke:#729fcf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;display:inline;stroke-dasharray:none"
-       d="m 499.71875,613.3125 m 0,0 c 31.78501,-29.94846 51.65625,-72.41324 51.65625,-119.53125 0,-40.70916 -14.81514,-77.96143 -39.34375,-106.65625"
+       style="fill:none;stroke:#729fcf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       d="m 504.7868,607.82044 m 0,0 C 535.01592,576.30225 552.7133,532.8865 550.32946,485.82883 548.26986,445.1718 531.589,408.71678 505.64004,381.29967"
        id="path19304"
        sodipodi:nodetypes="ccsc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <path
-       style="fill:none;stroke:#729fcf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;display:inline;stroke-dasharray:none"
-       d="M 555.4375,673.65625 C 603.45748,628.70442 633.5,564.74778 633.5,493.78125 633.5,432.30834 610.95448,376.09467 573.71875,332.9375"
+       style="fill:none;stroke:#729fcf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       d="M 563.47962,665.16371 C 609.16387,617.83997 635.93215,552.44529 632.34175,481.56965 629.23165,420.17547 603.87098,365.17443 564.4995,323.9564"
        id="path19306"
        sodipodi:nodetypes="csc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <path
-       style="fill:none;stroke:#729fcf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;display:inline;stroke-dasharray:none"
-       d="m 611.15625,733.96875 c 64.25246,-59.95414 104.4375,-145.37488 104.4375,-240.1875 0,-82.23767 -30.21134,-157.41295 -80.15625,-215.03125"
+       style="fill:none;stroke:#729fcf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       d="M 622.17104,722.49217 C 683.30796,659.36409 719.11985,572.01967 714.323,477.32848 710.16234,395.19612 676.18636,321.64559 623.39033,266.62795"
        id="path19308"
        sodipodi:nodetypes="csc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <path
-       style="fill:none;stroke:#5c3566;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;display:inline;stroke-dasharray:none"
-       d="m 491.53125,604.4375 m 0,0 c 29.39853,-27.73996 47.75,-67.04611 47.75,-110.65625 0,-37.64907 -13.68932,-72.0917 -36.34375,-98.65625"
+       style="fill:none;stroke:#5c3566;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       d="m 496.16173,599.37081 m 0,0 c 27.95742,-29.19179 44.29678,-69.37605 42.09041,-112.93036 -1.90477,-37.60085 -17.31911,-71.30679 -41.28851,-96.69115"
        id="path19312"
        sodipodi:nodetypes="ccsc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <path
-       style="fill:none;stroke:#5c3566;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;display:inline;stroke-dasharray:none"
-       d="m 543.15625,660.34375 c 44.43138,-41.63866 72.1875,-100.86514 72.1875,-166.5625 0,-56.88753 -20.78952,-108.91127 -55.21875,-148.875"
+       style="fill:none;stroke:#5c3566;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       d="M 550.54218,652.50608 C 592.81003,608.67281 617.53416,548.11793 614.21035,482.5047 611.33224,425.69002 587.93731,374.78472 551.53029,336.61404"
        id="path19314"
        sodipodi:nodetypes="csc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <path
-       style="fill:none;stroke:#5c3566;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;display:inline;stroke-dasharray:none"
-       d="m 594.75,716.21875 c 59.46897,-55.53685 96.6875,-134.64928 96.6875,-222.4375 0,-76.12299 -27.98569,-145.70207 -74.1875,-199.0625"
+       style="fill:none;stroke:#5c3566;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       d="M 604.88983,705.60933 C 661.47286,647.1349 694.6412,566.24078 690.19974,478.56499 686.34844,402.53948 654.87839,334.46539 606.03609,283.51078"
        id="path19316"
        sodipodi:nodetypes="csc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <path
-       style="fill:none;stroke:#a40000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;display:inline;stroke-dasharray:none"
-       d="m 435.46875,543.71875 m 0,0 c 13.05847,-12.63907 21.1875,-30.32881 21.1875,-49.9375 0,-16.75794 -5.93756,-32.12008 -15.8125,-44.125"
+       style="fill:none;stroke:#a40000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       d="m 437.10661,541.66705 m 0,0 c 12.4023,-13.28356 19.62595,-31.36191 18.63389,-50.94549 -0.84783,-16.73648 -7.555,-31.77854 -18.02466,-43.26849"
        id="path19318"
        sodipodi:nodetypes="cccs"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <path
-       style="fill:none;stroke:#a40000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;display:inline;stroke-dasharray:none"
-       d="m 482.65625,594.8125 m 0,0 c 26.79524,-25.34572 43.53125,-61.23652 43.53125,-101.03125 0,-34.34351 -12.45929,-65.7719 -33.09375,-90.03125"
+       style="fill:none;stroke:#a40000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       d="m 486.81242,590.233 m 0,0 c 25.47863,-26.66891 40.37737,-63.36046 38.36405,-103.10423 -1.73755,-34.29953 -15.77094,-65.05731 -37.60633,-88.24165"
        id="path19320"
        sodipodi:nodetypes="ccsc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <path
-       style="fill:none;stroke:#a40000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;display:inline;stroke-dasharray:none"
-       d="m 529.8125,645.90625 m 0,0 c 40.54653,-38.04956 65.90625,-92.13357 65.90625,-152.125 0,-51.92444 -18.98133,-99.40095 -50.375,-135.90625"
+       style="fill:none;stroke:#a40000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       d="m 536.48686,638.78413 m 0,0 c 38.56955,-40.05219 61.16053,-95.34996 58.12539,-155.26456 -2.627,-51.85795 -23.98601,-98.31333 -57.18639,-133.18358"
        id="path19322"
        sodipodi:nodetypes="ccsc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <path
-       style="fill:none;stroke:#a40000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;display:inline;stroke-dasharray:none"
-       d="m 576.96875,696.96875 c 54.29909,-50.7524 88.25,-122.99874 88.25,-203.1875 0,-69.50527 -25.50235,-133.0318 -67.65625,-181.78125"
+       style="fill:none;stroke:#a40000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       d="m 586.15987,687.31888 c 51.66184,-53.43455 81.9141,-127.30605 77.85712,-207.39211 -3.51647,-69.41626 -32.20016,-131.57119 -76.76646,-178.12553"
        id="path19324"
        sodipodi:nodetypes="csc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <path
-       style="fill:none;stroke:#4e9a06;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;display:inline;stroke-dasharray:none"
-       d="m 428.8125,536.5 c 11.10975,-10.84191 18.03125,-25.96919 18.03125,-42.71875 0,-14.28054 -5.01141,-27.38229 -13.375,-37.65625"
+       style="fill:none;stroke:#4e9a06;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       d="m 430.09465,534.81388 c 10.547,-11.3901 16.69431,-26.84817 15.84689,-43.5763 -0.7225,-14.26224 -6.39034,-27.09368 -15.263,-36.93134"
        id="path19326"
        sodipodi:nodetypes="csc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <path
-       style="fill:none;stroke:#4e9a06;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;display:inline;stroke-dasharray:none"
-       d="m 469.34375,580.40625 m 0,0 c 22.92069,-21.75689 37.1875,-52.52774 37.1875,-86.625 0,-29.3778 -10.59071,-56.26341 -28.1875,-77.0625"
+       style="fill:none;stroke:#4e9a06;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       d="m 472.78975,576.52667 m 0,0 c 21.79059,-22.88865 34.48234,-54.34189 32.75725,-88.39548 -1.48629,-29.34018 -13.42368,-55.65554 -32.05022,-75.53774"
        id="path19328"
        sodipodi:nodetypes="ccsc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <path
-       style="fill:none;stroke:#4e9a06;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;display:inline;stroke-dasharray:none"
-       d="m 509.84375,624.25 m 0,0 C 544.56172,591.58435 566.25,545.21262 566.25,493.78125 c 0,-44.47036 -16.23223,-85.12273 -43.0625,-116.4375"
+       style="fill:none;stroke:#4e9a06;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       d="m 515.45062,618.19264 m 0,0 c 33.02086,-34.38031 52.33528,-81.78993 49.73321,-133.15543 -2.24988,-44.4134 -20.51805,-84.19248 -48.89826,-114.10973"
        id="path19330"
        sodipodi:nodetypes="ccsc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <path
-       style="fill:none;stroke:#4e9a06;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;display:inline;stroke-dasharray:none"
-       d="m 550.34375,668.125 c 46.52842,-43.57434 75.59375,-105.56759 75.59375,-174.34375 0,-59.56984 -21.80244,-114.04462 -57.875,-155.875"
+       style="fill:none;stroke:#4e9a06;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       d="M 558.11324,659.90621 C 602.37751,614.03366 628.26921,550.6493 624.78963,481.96123 621.77581,422.46767 597.24525,369.1657 559.10257,329.21391"
        id="path19332"
        sodipodi:nodetypes="csc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300" />
     <path
-       style="fill:none;stroke:#4e9a06;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;display:inline;stroke-dasharray:none"
-       d="m 590.8125,711.96875 c 58.33668,-54.48235 94.84375,-132.06861 94.84375,-218.1875 0,-74.66163 -27.44298,-142.90698 -72.75,-195.25"
+       style="fill:none;stroke:#4e9a06;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       d="m 600.7429,701.57297 c 55.50555,-57.364 88.04055,-136.6979 83.68355,-222.70649 -3.77736,-74.56602 -34.63793,-141.33556 -82.53512,-191.31933"
        id="path19334"
        sodipodi:nodetypes="csc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
@@ -1139,7 +1139,7 @@
        inkscape:export-ydpi="300" />
     <path
        style="fill:none;stroke:#c4a000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
-       d="m 691.625,821.15625 c 87.72211,-81.62885 142.59375,-198.09651 142.59375,-327.375 0,-112.24094 -41.34489,-214.80202 -109.65625,-293.3125"
+       d="M 706.93685,805.33957 C 790.41677,719.37714 839.3257,600.28251 832.78512,471.16959 827.10652,359.07237 780.62571,258.73441 708.42977,183.78055"
        id="path19427"
        sodipodi:nodetypes="csc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
@@ -1147,7 +1147,7 @@
        inkscape:export-ydpi="300" />
     <path
        style="fill:none;stroke:#4e9a06;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
-       d="m 631.34375,755.84375 c 70.13929,-65.38966 114,-158.60573 114,-262.0625 0,-89.76116 -33.01234,-171.79887 -87.5625,-234.65625"
+       d="M 643.43656,743.27015 C 710.17778,674.41567 749.26625,579.09994 744.03206,475.77565 739.49079,386.12944 702.37019,305.867 644.70976,245.84996"
        id="path19431"
        sodipodi:nodetypes="csc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
@@ -1155,7 +1155,7 @@
        inkscape:export-ydpi="300" />
     <path
        style="fill:none;stroke:#4e9a06;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
-       d="m 671.84375,799.71875 c 81.94253,-76.29688 133.21875,-185.14238 133.21875,-305.9375 0,-104.86103 -38.61243,-200.69092 -102.40625,-274.0625"
+       d="M 686.09903,784.96812 C 764.07654,704.62325 809.78027,593.32292 803.66889,472.6825 798.36367,367.95576 754.95238,274.20211 687.52817,204.152"
        id="path19433"
        sodipodi:nodetypes="csc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
@@ -1163,7 +1163,7 @@
        inkscape:export-ydpi="300" />
     <path
        style="fill:none;stroke:#4e9a06;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
-       d="M 712.34375,843.59375 C 773.44988,786.76207 819.64,714.10719 844.40625,632.15625 846.71627,549.40731 849.24297,462.59458 851.625,382.09375 833.4375,306.18617 797.10596,237.32731 747.5,180.34375"
+       d="M 728.76132,826.6497 C 786.91392,766.79927 829.36906,691.90053 849.95744,608.80154 848.078,526.04171 846.20935,439.21231 844.51555,358.69407 822.51097,283.80387 782.74218,216.8713 730.31678,162.47042"
        id="path19435"
        sodipodi:nodetypes="cccc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
@@ -1171,7 +1171,7 @@
        inkscape:export-ydpi="300" />
     <path
        style="fill:none;stroke:#5c3566;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
-       d="m 697.96875,828.03125 c 89.57141,-83.33444 145.59375,-202.25743 145.59375,-334.25 0,-114.58824 -42.22688,-219.31808 -111.96875,-299.46875"
+       d="M 713.61935,811.86424 C 798.85992,724.10485 848.79385,602.49981 842.11596,470.67628 836.3186,356.23479 788.84721,253.77545 715.13959,177.25587"
        id="path19437"
        sodipodi:nodetypes="csc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
@@ -1179,7 +1179,7 @@
        inkscape:export-ydpi="300" />
     <path
        style="fill:none;stroke:#5c3566;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
-       d="M 646.375,772.125 C 720.89525,702.68924 767.5,603.67174 767.5,493.78125 767.5,398.42153 732.41372,311.25683 674.4375,244.5"
+       d="M 659.27029,758.74459 C 730.18213,685.62756 771.71762,584.37898 766.15793,474.62922 761.33341,379.39162 721.88214,294.11367 660.60274,230.37552"
        id="path19439"
        sodipodi:nodetypes="csc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
@@ -1187,7 +1187,7 @@
        inkscape:export-ydpi="300" />
     <path
        style="fill:none;stroke:#a40000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
-       d="M 624.125,748.0625 C 692.182,684.60727 734.75,594.1717 734.75,493.78125 734.75,406.69507 702.72719,327.11791 649.8125,266.125"
+       d="M 635.83428,735.87002 C 700.59374,669.05285 738.53183,576.57944 733.45278,476.31757 729.04684,389.34292 693.039,311.48779 637.10625,253.25009"
        id="path19441"
        sodipodi:nodetypes="csc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
@@ -1195,7 +1195,7 @@
        inkscape:export-ydpi="300" />
     <path
        style="fill:none;stroke:#a40000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
-       d="m 671.34375,799.15625 c 81.79113,-76.15597 132.9375,-184.80301 132.9375,-305.375 0,-104.65898 -38.55189,-200.29743 -102.21875,-273.53125"
+       d="M 685.57115,784.41957 C 763.40458,704.22308 808.98867,593.12752 802.88858,472.70994 797.59357,368.18499 754.25243,274.61948 686.96199,204.70054"
        id="path19443"
        sodipodi:nodetypes="csc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
@@ -1203,7 +1203,7 @@
        inkscape:export-ydpi="300" />
     <path
        style="fill:none;stroke:#4e9a06;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
-       d="m 394.2414,499.70312 c 1.42518,-1.58593 2.29687,-3.69993 2.29687,-6 0,-2.09064 -0.72115,-4.00737 -1.92187,-5.53125"
+       d="m 393.71559,500.32778 c 1.34311,-1.656 2.10673,-3.8114 1.99037,-6.10851 -0.10579,-2.08797 -0.92298,-3.96577 -2.19925,-5.42694"
        id="path19468"
        sodipodi:nodetypes="csc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
@@ -1223,7 +1223,7 @@
     <path
        sodipodi:nodetypes="cccs"
        id="path19815"
-       d="m 396.93068,501.83876 m 0,0 c 2.19383,-2.12337 3.5595,-5.09525 3.5595,-8.3895 0,-2.81535 -0.9975,-5.39619 -2.6565,-7.413"
+       d="m 396.51071,502.47404 m 0,0 c 2.08359,-2.23165 3.29715,-5.26881 3.1305,-8.55885 -0.14244,-2.81174 -1.26924,-5.3388 -3.02815,-7.26911"
        style="fill:none;stroke:#a40000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
        inkscape:export-xdpi="300"
@@ -1231,7 +1231,7 @@
     <path
        sodipodi:nodetypes="ccsc"
        id="path19817"
-       d="m 401.6169,506.125 m 0,0 c 3.39751,-3.25521 5.5125,-7.84195 5.5125,-12.91875 0,-4.3593 -1.55812,-8.35319 -4.15,-11.45625"
+       d="m 401.40986,506.76641 m 0,0 c 3.22846,-3.42293 5.10868,-8.1108 4.85183,-13.18109 -0.22055,-4.35371 -1.97874,-8.26368 -4.72429,-11.23162"
        style="fill:none;stroke:#c4a000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
        inkscape:export-xdpi="300"
@@ -1239,7 +1239,7 @@
     <path
        sodipodi:nodetypes="ccsc"
        id="path19819"
-       d="m 399.24999,504.25937 m 0,0 c 2.86798,-2.76698 4.65625,-6.65009 4.65625,-10.95 0,-3.6841 -1.3086,-7.06138 -3.4875,-9.69375"
+       d="m 398.95054,504.89828 m 0,0 c 2.72432,-2.90852 4.31384,-6.87713 4.0963,-11.17155 -0.1864,-3.67938 -1.66418,-6.98612 -3.97347,-9.50489"
        style="fill:none;stroke:#729fcf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
        inkscape:export-xdpi="300"
@@ -1255,8 +1255,8 @@
        id="rect19811"
        width="178.57143"
        height="777.14288"
-       x="762.85718"
-       y="119.50504"
+       x="760"
+       y="116.6479"
        rx="7.701766"
        ry="7.701766"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
@@ -1264,7 +1264,7 @@
        inkscape:export-ydpi="300" />
     <path
        style="fill:none;stroke:#729fcf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
-       d="M 719.25,857.71875 C 817.91719,767.6234 879.8125,637.923 879.8125,493.78125 879.8125,369.08884 833.49953,255.22237 757.125,168.4375"
+       d="M 736.36522,839.71743 C 830.34785,744.74559 885.60198,612.07983 878.30942,468.12267 872.00087,343.58995 819.98638,232.2124 739.31895,149.40269"
        id="path19417"
        sodipodi:nodetypes="csc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
@@ -1272,7 +1272,7 @@
        inkscape:export-ydpi="300" />
     <path
        style="fill:none;stroke:#729fcf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
-       d="m 774.9375,918.0625 c 114.91752,-105.09882 187,-256.27847 187,-424.28125 0,-145.45929 -54.038,-278.28621 -143.125,-379.53125"
+       d="M 795.02682,897.06149 C 904.47992,786.28325 968.82146,631.65033 960.3217,463.86271 952.96249,318.58969 892.27359,188.66683 798.1784,92.058617"
        id="path19421"
        sodipodi:nodetypes="csc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
@@ -1280,7 +1280,7 @@
        inkscape:export-ydpi="300" />
     <path
        style="fill:none;stroke:#729fcf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
-       d="M 830.65625,978.375 C 961.80459,858.27417 1044.0625,685.62864 1044.0625,493.78125 c 0,-166.21868 -61.73998,-318.01549 -163.53125,-433.71875"
+       d="M 853.71824,954.38996 C 978.62237,827.80775 1052.0403,651.22165 1042.3341,459.61994 1033.9247,293.61414 964.58391,145.13533 857.06923,34.730155"
        id="path19423"
        sodipodi:nodetypes="csc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
@@ -1288,7 +1288,7 @@
        inkscape:export-ydpi="300" />
     <path
        style="fill:none;stroke:#729fcf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
-       d="m 886.375,1038.7188 c 147.3879,-135.10333 239.7812,-329.23828 239.7812,-544.93755 0,-186.98313 -69.4364,-357.74346 -183.93745,-487.90625"
+       d="M 912.41107,1011.7332 C 1052.7749,869.34616 1135.228,670.78539 1124.3152,455.36236 1114.8551,268.61867 1036.8685,101.59001 915.9287,-22.613134"
        id="path19425"
        sodipodi:nodetypes="csc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
@@ -1296,7 +1296,7 @@
        inkscape:export-ydpi="300" />
     <path
        style="fill:none;stroke:#729fcf;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
-       d="m 663.53125,797.375 c 82.43318,-75.09262 134.1875,-183.29948 134.1875,-303.59375 0,-103.93567 -38.63933,-198.8289 -102.3125,-271.15625"
+       d="M 677.67239,782.37336 C 756.20084,703.20636 802.41438,592.51968 796.32834,472.37947 791.06993,368.5769 747.67917,275.76007 680.42827,206.74676"
        id="path19419"
        sodipodi:nodetypes="csc"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
@@ -1319,8 +1319,8 @@
     <text
        xml:space="preserve"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Roman No9 L;-inkscape-font-specification:Nimbus Roman No9 L"
-       x="567.70575"
-       y="121.00154"
+       x="554.84863"
+       y="120.65289"
        id="text19474"
        sodipodi:linespacing="125%"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
@@ -1328,29 +1328,29 @@
        inkscape:export-ydpi="300"><tspan
          sodipodi:role="line"
          id="tspan19476"
-         x="567.70575"
-         y="121.00154">Spatially</tspan><tspan
+         x="554.84863"
+         y="120.65289">Spatially</tspan><tspan
          sodipodi:role="line"
-         x="567.70575"
-         y="166.00154"
+         x="554.84863"
+         y="165.65288"
          id="tspan19478">Coherent</tspan></text>
     <text
        sodipodi:linespacing="125%"
        id="text19480"
-       y="102.81879"
-       x="979.8479"
+       y="120.65289"
+       x="962.70502"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Roman No9 L;-inkscape-font-specification:Nimbus Roman No9 L"
        xml:space="preserve"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300"><tspan
-         y="102.81879"
-         x="979.8479"
+         y="120.65289"
+         x="962.70502"
          id="tspan19482"
          sodipodi:role="line">Spatially and Temporally</tspan><tspan
          id="tspan19484"
-         y="147.81879"
-         x="979.8479"
+         y="165.65288"
+         x="962.70502"
          sodipodi:role="line">Coherent</tspan></text>
   </g>
   <g
@@ -1404,7 +1404,7 @@
              inkscape:r_cy="true" />
           <path
              transform="matrix(0.60274,-0.128625,0.06428372,0.760788,31.12021,14.49141)"
-             d="m -3.5355339,27.228739 a 10.341436,3.2703688 0 1 1 -20.6828731,0 10.341436,3.2703688 0 1 1 20.6828731,0 z"
+             d="m -3.5355339,27.228739 c 0,1.806175 -4.6300188,3.270369 -10.3414361,3.270369 -5.711418,0 -10.341437,-1.464194 -10.341437,-3.270369 0,-1.806175 4.630019,-3.270369 10.341437,-3.270369 5.7114173,0 10.3414361,1.464194 10.3414361,3.270369 z"
              sodipodi:ry="3.2703688"
              sodipodi:rx="10.341436"
              sodipodi:cy="27.228739"
@@ -1422,7 +1422,7 @@
              sodipodi:cy="27.228739"
              sodipodi:rx="10.341436"
              sodipodi:ry="3.2703688"
-             d="m -3.5355339,27.228739 a 10.341436,3.2703688 0 1 1 -20.6828731,0 10.341436,3.2703688 0 1 1 20.6828731,0 z"
+             d="m -3.5355339,27.228739 c 0,1.806175 -4.6300188,3.270369 -10.3414361,3.270369 -5.711418,0 -10.341437,-1.464194 -10.341437,-3.270369 0,-1.806175 4.630019,-3.270369 10.341437,-3.270369 5.7114173,0 10.3414361,1.464194 10.3414361,3.270369 z"
              transform="matrix(0.60274,-0.128625,0.06428372,0.760788,31.12021,11.39591)"
              inkscape:r_cx="true"
              inkscape:r_cy="true" />
@@ -1441,7 +1441,7 @@
              sodipodi:cy="22.375"
              sodipodi:rx="3.25"
              sodipodi:ry="3.25"
-             d="m 31,22.375 a 3.25,3.25 0 1 1 -6.5,0 3.25,3.25 0 1 1 6.5,0 z"
+             d="m 31,22.375 c 0,1.794925 -1.455075,3.25 -3.25,3.25 -1.794925,0 -3.25,-1.455075 -3.25,-3.25 0,-1.794925 1.455075,-3.25 3.25,-3.25 1.794925,0 3.25,1.455075 3.25,3.25 z"
              transform="matrix(0.335464,0,0,0.335464,11.74678,27.2261)"
              inkscape:r_cx="true"
              inkscape:r_cy="true" />
@@ -1454,7 +1454,7 @@
              inkscape:r_cy="true" />
           <path
              transform="matrix(0.335464,0,0,0.335464,11.74678,30.23376)"
-             d="m 31,22.375 a 3.25,3.25 0 1 1 -6.5,0 3.25,3.25 0 1 1 6.5,0 z"
+             d="m 31,22.375 c 0,1.794925 -1.455075,3.25 -3.25,3.25 -1.794925,0 -3.25,-1.455075 -3.25,-3.25 0,-1.794925 1.455075,-3.25 3.25,-3.25 1.794925,0 3.25,1.455075 3.25,3.25 z"
              sodipodi:ry="3.25"
              sodipodi:rx="3.25"
              sodipodi:cy="22.375"
@@ -1703,7 +1703,7 @@
        id="rect19414"
        width="15.403532"
        height="742.71338"
-       x="749.91266"
+       x="748.48413"
        y="123.20337"
        rx="7.701766"
        ry="7.701766"
@@ -1713,8 +1713,8 @@
     <text
        xml:space="preserve"
        style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Roman No9 L;-inkscape-font-specification:Nimbus Roman No9 L"
-       x="545.48236"
-       y="856.39258"
+       x="561.19659"
+       y="836.39258"
        id="text19494"
        sodipodi:linespacing="125%"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
@@ -1722,15 +1722,15 @@
        inkscape:export-ydpi="300"><tspan
          sodipodi:role="line"
          id="tspan19496"
-         x="545.48236"
-         y="856.39258">Monochromatic</tspan><tspan
+         x="561.19659"
+         y="836.39258">Monochromatic</tspan><tspan
          sodipodi:role="line"
-         x="545.48236"
-         y="901.39258"
+         x="561.19659"
+         y="881.39258"
          id="tspan19498">Filter</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
-       d="m 672.76159,852.35198 66.67007,0"
+       d="m 662.76156,856.63769 66.6701,0"
        id="path19500"
        inkscape:export-filename="/home/filipe/Documents/PhD-Thesis/coherence.png"
        inkscape:export-xdpi="300"
