@@ -43,18 +43,18 @@ transverse component of the acceleration (Fig. \ref{coordinate_axis}b) \cite{Att
   acceleration sustained by the electron as observed from the position ${\mathbf r}$. $\theta$ is the angle between the polarization axis and the projection of $\mathbf r$ on a plane normal to the propagation direction.}
 \label{coordinate_axis}
 \end{figure}
-Finally combining equations \ref{Eq:wave_propagation},\ref{Eq:electron_acceleration} and \ref{Eq:scattering_by_accelerating_charge} we get that the instantaneous scattered field by a free electron as
+Finally combining equations \ref{Eq:wave_propagation}, \ref{Eq:electron_acceleration} and \ref{Eq:scattering_by_accelerating_charge} we get that the instantaneous scattered field by a free electron is
 \begin{eqnarray}
 a_{\perp}(t) & = & |\mathbf a(t)| \sin \theta  \\
 E_s(\mathbf r,t) & = & \frac{e^2 E_0 \sin \theta }{4 \pi \epsilon_0 m c^2 r}
 \exp(2 \pi i \nu (t -| \mathbf r|/c)) \, . 
 \label{Eq:scattering_by_electron}
 \end{eqnarray}
-The classical electron radius is defined as,
+The classical electron radius is defined as
 \begin{equation}
 r_e = \frac{e^2}{4 \pi \epsilon_0 m c^2}
 \end{equation}
-which can be used to simplify the electric field expression to,
+which can be used to simplify the electric field expression to
 \begin{equation}
 E_s(\mathbf r,t) = \frac{r_e E_0 \sin \theta }{r} \exp(2 \pi i \nu (t -| \mathbf
 r|/c))  \, .
@@ -67,7 +67,7 @@ I(\mathbf r) = \frac{ |E_{max}(\mathbf r)|^2 }{2 \epsilon_0 c} .
 \label{Eq:poynting_vector}
 \end{equation}
 where $E_{max}$ denotes the maximum value of the electric field.
-The time averaged power per unit area normal to $\mathbf r$ scattered by an electron is then,
+The time averaged power per unit area normal to $\mathbf r$ scattered by an electron is then
 \begin{equation}
 I(\mathbf r)  = \frac{r_e^2 E_0^2 \sin^2 \theta }{2 \epsilon_0 c r^2} \, ,
 \label{Eq:scattered_intensity}
@@ -98,8 +98,8 @@ from the previous section at the origin and add a new electron at the position
 $\mathbf r$. When the system is illuminated by an electric field of amplitude $E_0$
 traveling along $\mathbf s_0$, both electrons will scatter as described in
 Eq. \ref{Eq:scattering_by_electron_simplified}. The amplitude of the scattered
-field from each electron is the same but the phase depends on the position of
-the electron (Fig. \ref{Fig:two_electrons}). 
+field from each electron is the same but the phase depends on the relative position of
+the two electrons (Fig. \ref{Fig:two_electrons}). 
 
 \begin{figure}[h]
 \begin{center}
@@ -122,16 +122,16 @@ E(\mathbf d) & = & E_s(\mathbf d) + E_s(\mathbf d) \exp(\frac{2 \pi i \Delta
   l}{\lambda})
 \label{Eq:ScatteringTwoElectrons}
 \end{eqnarray}
-where $\mathbf s_0$ and $\mathbf s$ are unit vectors, $\Delta l$ the total path
+where $\mathbf s_0$ and $\mathbf s$ are unit vectors, $\Delta l$ is the total path
 difference, $E_s$ the electric field scattered by an isolated electron, $\lambda$
 the wavelength of the incoming field and $E$ the total observed field.
-This approximation assumes that the $|\mathbf d| -
-|\mathbf d- \mathbf a| << \lambda$ or put in another way $|\mathbf r|^2/(|\mathbf d| \lambda) \ll
+This approximation assumes that $|\mathbf d| -
+|\mathbf d- \mathbf a| << \lambda$, or put in another way $|\mathbf r|^2/(|\mathbf d| \lambda) \ll
 1 $. This approximation is known as the {\em Fraunhofer approximation} and the conditions
-under which they are valid are known as the far field regime. Fraunhofer
-diffraction is also used to describe diffraction in this regime. Also implicit
+under which they are valid are known as the far field regime. ``Fraunhofer
+diffraction'' is a term used to describe diffraction in this regime. Also implicit
 in this calculation is the assumption that the scattered field from one electron produces a
-negligible scattered field on the other electron, that is, multiple
+negligible influence on the scattered field of the other electron, that is, multiple
 scattering can be ignored. This approximation is known as the {\em first-order Born
   approximation}.
 It is
@@ -145,7 +145,7 @@ the choice of origin, as it must obviously be.
 The two electron framework presented in the previous section can be easily
 extended to $N$ electrons by noticing that the electrons scatter independently
 of each other. So the scattering of $N$ electrons measured at a point $\mathbf d$
-is given by,
+is given by
 \begin{equation}
 E(\mathbf d) = E_s(\mathbf d) \sum_{n=0}^N \exp\left(\frac{2 \pi i \mathbf r_n \cdot(\mathbf s_0 -
 \mathbf s)}{\lambda}\right) \, .
@@ -157,7 +157,7 @@ scattering vector while $\mathbf s$ is rotated around a sphere is known as the
 
 The continuous case is now easily derived by replacing individual electrons by
 an electron density $\rho$. The scattering from an electron density cloud is
-then described by,
+then described by
 \begin{equation}
 E(\mathbf d) = E_s(\mathbf d) \int_{\mathbf r} \rho(\mathbf r) \exp\left(2
     \pi i \mathbf r \cdot \mathbf S \right) d\mathbf r\, .
@@ -186,17 +186,17 @@ This formalism was used for the diffraction calculation in {\bf paper \ref{melti
 \section{Coherence}\label{coherence}
 
 Throughout the previous sections we have assumed that the incoming wave was
-perfectly coherent, both temporaly and spatially. Temporal coherence is related
-to the bandwidth of the wave, the larger the bandwidth the worse is the
+perfectly coherent, both temporaly and spatially (see Fig. \ref{Fig:coherence}). Temporal coherence is related
+to the bandwidth of the wave: the larger the bandwidth the worse is the
 coherence. We have assumed monochromatic waves i.e. perfect temporal
 coherence. Spatial coherence is a measure of how stable is the phase relation between
-two points as a function of time (Fig. \ref{Fig:coherence}). More accurately it is the cross-correlation of the field at two locations over time \cite{Attwood2007Soft}. 
+two points as a function of time. More accurately it is the cross-correlation of the field at two locations over time \cite{Attwood2007Soft}. 
 
 Coherence is important for diffraction experiments \cite{HauRiege2008Effect} because if, for example, the
-spatial coherence of the beam is low the instantaneous diffraction pattern of
+spatial coherence of the beam is low, the instantaneous diffraction pattern of
 our system will change rapidly during the exposure, but the integrated pattern
 will show very few signs of the interference between different parts of the
-system and so hide its structure. We can see this comparing the diffraction
+system and so hide its structure. We can see this by comparing the diffraction
 pattern obtrain from the field in Eq. \ref{Eq:ScatteringTwoElectrons}, to the
 one generated by replacing $\Delta l/\lambda$ by a random term $X$
 between $-1/2$ and $1/2$ corresponding to a random phase difference due to
@@ -215,17 +215,17 @@ I(\mathbf d)  & \propto & \int_{-1/2}^{1/2} |E(\mathbf d,X)|^2 dX = 2 |E_s(\math
 \end{eqnarray}
 where $I(\mathbf d)$ is the observed diffracted intensity. Notice that in the
 incoherent case the term $2 |E_s(\mathbf d)|^2 \cos(2 \pi \Delta l / \lambda)$,
-which gives information about the relative location of the two electons, is not
+which gives information about the relative location of the two electrons, is not
 present. This term is usually called the cross term and is the only one that
-gives structural information. The other term is called the self term and only gives
+gives structural information. The other term is called the self term, and this only gives
 information about the building blocks of the system, the electrons in this case,
 but not how they are organized.
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=1.0 \columnwidth]{Diffraction_Theory/coherence.png}
+\includegraphics[width=1.0 \columnwidth]{Diffraction_Theory/coherence.pdf}
 \end{center}
-\caption{A light bulb is a source of incoherent radiation, but by passing it
+\caption{{\bf Coherence.} A light bulb is a source of incoherent radiation, but by passing it
   through a pinhole it is possible to make it spatially coherent and by
   filtering it down to a single wavelength it is possible to make it temporally coherent. 
 }

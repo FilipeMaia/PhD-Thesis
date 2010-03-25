@@ -1,8 +1,8 @@
 \chapter{An Introduction to Fourier Transforms}\label{fourier_transform_basics}\noindent
 Fourier transforms are used extensively in the subject of diffraction and
-imaging, so in this chapter we present a basic introduction describing the
+imaging, so in this chapter we present a basic introduction, describing the
 Fourier transform and its most commonly used properties. These properties will
-be fundamental for both for the description scattering and for the explanation
+be fundamental for a description of scattering and for the explanation
 of image reconstruction algorithms.
 
 \section{Continuous Fourier Transform}
@@ -12,7 +12,7 @@ We will start by defining the continuous forward Fourier transform, following cr
 \hat{f}(q) = \mathscr{F}f = \int \limits_{-\infty}^{\infty} 
 f(x) \exp(2 \pi i q \cdot x) \, dx
 \end{equation}
-and the inverse transform as,
+and the inverse transform as
 \begin{equation}
 f(x) = \mathscr{F}^{-1}\hat{f} = \int \limits_{-\infty}^{\infty} 
 \hat{f}(q) \exp(-2 \pi i q \cdot x) \, dq.
@@ -21,7 +21,7 @@ The following properties of the Fourier transform will be important for the rest
 %The Fourier transform has the following properties:
 \begin{enumerate}
 \item The Fourier transform is a linear transformation. For any two complex
-  numbers $a$ and $b$,
+  numbers $a$ and $b$
 \begin{equation}
 \mathscr{F}\left\{ a f(x) + b g(x)\right\} = a \mathscr{F}f(x) + b \mathscr{F}g(x)
 \end{equation}
@@ -37,12 +37,12 @@ property or theorem.
 \begin{equation}
 \hat{f}(q) = \overline{\hat{f}(-q)}
 \end{equation}
-where $\overline{x}$ represents the complex conjugate of $x$.
+where $\overline{\hat{f}(-q)}$ represents the complex conjugate of $\hat{f}(-q)$.
 \item The Fourier transform of an hermitian function $f(x)$ is a real function,
 \begin{equation}
 Im\left[\hat{f}(q)\right] = 0
 \end{equation}
-where $Im\left[x\right]$ represents the imaginary part of $x$.
+where $Im\left[\hat{f}(q)\right]$ represents the imaginary part of $\hat{f}(q)$.
 \item The Fourier transform of a function translated by an amount $\Delta x$ is
   related to the transform of the original function by a factor of $\exp(2 \pi i
   \Delta x q)$ ,
@@ -117,6 +117,7 @@ convolution as
 \begin{equation}
   (\mathbf a * \mathbf b)_n = \sum \limits_{m = 0}^{N-1} \mathbf a_m 
   \mathbf  b_{n-m \bmod N} .
+  \label{Eq:dft_convolution}
 \end{equation}
 Notice the modulus $N$ in the index of $b$. This detail will lead to important
 consequences.
@@ -149,19 +150,19 @@ where $\delta(x)$ represents the Dirac delta function.
     with the sampling function \Sha$(x)$ corresponding to sampling of the signal
     by a pixel detector. This corresponds to replicating the spectrum of the
     signal in Fourier space. Notice that there is no overlap of the replicated
-    spectra. It is then possible to recover the original signal by selecting the
+    spectra of the sampled signal in Fourier space (on the right). It is then possible to recover the original signal by selecting the
     original signal with an appropriate rectangular window function
     rect$(q)$. In real space this corresponds to a convolution with the
     corresponding sinc function sinc$(x)$.}
   \label{Fig:Sampling}
 \end{figure}
 
-As figure \ref{Fig:Sampling} shows sampling a signal causes its spectrum to be
+As figure \ref{Fig:Sampling} shows, sampling a signal causes its spectrum to be
 replicated in Fourier space. The distance between the replicas is proportional
 to the sampling frequency due to the scaling property of the Fourier
 transform. If the sampling frequency is below the Nyquist rate the spectra will
-overlap and a perfect reconstruction is no longer possible, a phenomenon known as
-aliasing (see Fig. \ref{Fig:Undersampling}). We call such a signal {\em undersampled}. If on the other hand
+overlap and a perfect reconstruction is no longer possible. This phenomenon is known as
+aliasing (see Fig. \ref{Fig:Undersampling}) and is related to eq. \ref{Eq:dft_convolution}. We call such a signal {\em undersampled}. If on the other hand
 the sampling frequency is higher than the Nyquist rate, we call it {\em
   oversampled} and we define the {\em oversampling ratio}, $\sigma$, as the ratio between the
 sampling frequency and the Nyquist rate, or equivalently the fraction between
@@ -171,10 +172,13 @@ which the spectrum is different from zero, as illustrated in figure \ref{Fig:Ove
 \begin{figure}[h!]
   \centering
   \includegraphics[width=0.9 \columnwidth]{Fourier_Theory/Sampling3.png}
-  \caption{Recovery of an undersampled band-limited signal leading to
+  \caption{Incomplete recovery of an undersampled band-limited signal leading to
     aliasing. The process is analogous to \ref{Fig:Sampling} but with a sampling
-    frequency below the Nyquist rate. The spectrum of the signal will then
-    overlap in the sampled signal and a perfect reconstruction is no longer possible.}
+    frequency below the Nyquist rate. 
+%    The spectrum of the signal will then overlap in the sampled signal
+    The replicated spectra of the undersampled signal overlap with each other in
+    Fourier space,
+    and a perfect reconstruction is no longer possible.}
   \label{Fig:Undersampling}
 \end{figure}
 
