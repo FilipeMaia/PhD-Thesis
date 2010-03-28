@@ -1,0 +1,181 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 6.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      6041,        172]
+NotebookOptionsPosition[      5553,        151]
+NotebookOutlinePosition[      5908,        167]
+CellTagsIndexPosition[      5865,        164]
+WindowFrame->Normal
+ContainsDynamic->False*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"SetDirectory", "[", "\"\</Users/filipe/Documents/PhD-Thesis\>\"", 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ColorP", " ", "=", " ", 
+   RowBox[{"Plot3D", "[", 
+    RowBox[{
+     RowBox[{"Sinc", "[", 
+      RowBox[{"2", " ", "\[Pi]", " ", 
+       RowBox[{"Sqrt", "[", 
+        RowBox[{
+         RowBox[{"x", "^", "2"}], "+", 
+         RowBox[{"y", "^", "2"}]}], "]"}]}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "1.5"}], ",", "1.5"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "1.5"}], ",", "1.5"}], "}"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", 
+      RowBox[{"Directive", "[", 
+       RowBox[{
+        RowBox[{"RGBColor", "[", 
+         RowBox[{
+          RowBox[{"52", "/", "255"}], ",", 
+          RowBox[{"102", "/", "255"}], ",", 
+          RowBox[{"164", "/", "255"}]}], "]"}], ",", 
+        RowBox[{"Specularity", "[", 
+         RowBox[{
+          RowBox[{"RGBColor", "[", 
+           RowBox[{
+            RowBox[{"114", "/", "255"}], ",", 
+            RowBox[{"159", "/", "255"}], ",", 
+            RowBox[{"207", "/", "255"}]}], "]"}], ",", "20"}], "]"}]}], 
+       "]"}]}], ",", 
+     RowBox[{"Mesh", "\[Rule]", "None"}], ",", 
+     RowBox[{"Axes", "\[Rule]", "None"}], ",", 
+     RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
+     RowBox[{"PlotPoints", "\[Rule]", "100"}], ",", 
+     RowBox[{"PerformanceGoal", "\[Rule]", "\"\<Quality\>\""}]}], "]"}]}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.478785319153925*^9, 3.4787853779072237`*^9}, {
+   3.4787856770448227`*^9, 3.4787857723697367`*^9}, {3.478785820863429*^9, 
+   3.478785863998254*^9}, {3.478785907997087*^9, 3.4787859221008463`*^9}, {
+   3.4787860620775433`*^9, 3.478786109131411*^9}, {3.478786178543048*^9, 
+   3.478786225720592*^9}, {3.4787864272543707`*^9, 3.478786528642289*^9}, {
+   3.478786584944242*^9, 3.478786612168749*^9}, 3.478786683403863*^9, {
+   3.47878785569877*^9, 3.4787878620554*^9}, 3.47878793258328*^9, {
+   3.478790175439371*^9, 3.478790178231311*^9}, {3.478791525026229*^9, 
+   3.478791534728716*^9}}],
+
+Cell[BoxData["\<\"/Users/filipe/Documents/PhD-Thesis\"\>"], "Output",
+ CellChangeTimes->{3.478791535627462*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<SincColor.png\>\"", ",", "ColorP", ",", 
+    RowBox[{"ImageResolution", "\[Rule]", "100"}], ",", 
+    RowBox[{"ImageSize", "\[Rule]", "2000"}]}], "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.4787901862590647`*^9, 3.478790194795063*^9}, {
+  3.478793049443293*^9, 3.478793082071877*^9}, {3.478793130825897*^9, 
+  3.478793174448123*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.47879320339391*^9, 3.478793205023325*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"BlueP", " ", "=", " ", 
+   RowBox[{"Plot3D", "[", 
+    RowBox[{
+     RowBox[{"Sinc", "[", 
+      RowBox[{"2", " ", "\[Pi]", " ", 
+       SqrtBox[
+        RowBox[{
+         SuperscriptBox["x", "2"], "+", 
+         SuperscriptBox["y", "2"]}]]}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "1.5`"}], ",", "1.5`"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"y", ",", 
+       RowBox[{"-", "1.5`"}], ",", "1.5`"}], "}"}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", 
+      RowBox[{"Directive", "[", 
+       RowBox[{
+        RowBox[{"RGBColor", "[", 
+         RowBox[{
+          FractionBox["52", "255"], ",", 
+          FractionBox["102", "255"], ",", 
+          FractionBox["164", "255"]}], "]"}], ",", 
+        RowBox[{"Specularity", "[", 
+         RowBox[{
+          RowBox[{"RGBColor", "[", 
+           RowBox[{
+            FractionBox["114", "255"], ",", 
+            FractionBox["159", "255"], ",", 
+            FractionBox["207", "255"]}], "]"}], ",", "20"}], "]"}]}], "]"}]}],
+      ",", 
+     RowBox[{"Axes", "\[Rule]", "None"}], ",", 
+     RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
+     RowBox[{"PlotPoints", "\[Rule]", "100"}], ",", 
+     RowBox[{"Mesh", "\[Rule]", "None"}], ",", 
+     RowBox[{"MeshStyle", "\[Rule]", 
+      RowBox[{"RGBColor", "[", 
+       RowBox[{
+        RowBox[{"61", "/", "255"}], ",", 
+        RowBox[{"103", "/", "255"}], ",", 
+        RowBox[{"155", "/", "255"}]}], "]"}]}], ",", 
+     RowBox[{"Lighting", "\[Rule]", "\"\<Neutral\>\""}], ",", 
+     RowBox[{"PerformanceGoal", "\[Rule]", "\"\<Quality\>\""}]}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.4787886209868097`*^9, 3.4787886227943583`*^9}, {
+  3.478790120295218*^9, 3.4787901275990543`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{"\"\<SincBlue.png\>\"", ",", "BlueP", ",", 
+    RowBox[{"ImageResolution", "\[Rule]", "100"}], ",", 
+    RowBox[{"ImageSize", "\[Rule]", "2000"}]}], "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.4787901317695017`*^9, 3.478790163451055*^9}, {
+  3.478793210288682*^9, 3.4787932106309443`*^9}}]
+},
+WindowSize->{640, 750},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+ShowSelection->True,
+FrontEndVersion->"6.0 for Mac OS X x86 (32-bit) (June 19, 2007)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[590, 23, 2159, 50, 118, "Input"],
+Cell[2752, 75, 111, 1, 27, "Output"]
+}, Open  ]],
+Cell[2878, 79, 401, 8, 27, "Input"],
+Cell[3282, 89, 91, 1, 27, "Input"],
+Cell[3376, 92, 1818, 48, 186, "Input"],
+Cell[5197, 142, 352, 7, 27, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
