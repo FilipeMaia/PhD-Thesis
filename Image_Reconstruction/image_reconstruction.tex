@@ -7,7 +7,13 @@ that the Fraunhofer approximation holds, and that there is no multiple
 scattering.
 In this chapter we will try to tackle the {\em inverse
   problem}, that is, from an arbitrary diffraction pattern we will try to
-recover the electron density that gave rise to it.
+recover the electron density that gave rise to it. There are many 
+special experimental conditions under which this problem can be solved
+relatively easily such as fourier holography
+\cite{McNulty1992Highresolution,Eisebitt2004Lensless,Marchesini2008Massively},
+ptychography \cite{Rodenburg2007Transmission,Thibault2009Probe}, fresnel coherent
+diffractive imaging \cite{Quiney2006Diffractive,Quiney2005Iterative}, among others. In this chapter we will only deal with
+the general problem. 
 \section{The Phase Problem}
 
 We have seen that a diffraction pattern can be calculated from the Fourier
@@ -44,7 +50,7 @@ undetermined. For a pattern with $N$ pixels we have $2N$ unknowns (the real and
 imaginary part of the object) but only $N$ constraints. But if we know that the object is isolated, meaning the
 object is surrounded by a constant $\rho$ (e.g., sample in vacuum with a
 surrounding $\rho = 0$), then in some circumstances it is possible to solve this
-problem. The number of pixels of the object must at least be half of that of the
+problem. Several related techniques such as fourier holography, ptychography, fresnel coherent diffractive imaging  The number of pixels of the object must at least be half of that of the
 diffraction pattern for the number of unknowns to match the number of
 constraints, that is the oversampling ratio (see
 Fig. \ref{Fig:OversamplingRatio}) of the image must be equal to or bigger than
