@@ -14,7 +14,7 @@
    height="1052.3622047"
    id="svg2"
    version="1.1"
-   inkscape:version="0.47pre3 r22311"
+   inkscape:version="0.47 r22583"
    sodipodi:docname="cover.svg">
   <sodipodi:namedview
      id="base"
@@ -27,7 +27,7 @@
      inkscape:cx="339.51012"
      inkscape:cy="414.44998"
      inkscape:document-units="px"
-     inkscape:current-layer="svg2"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1202"
      inkscape:window-height="858"
@@ -168,7 +168,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -185,31 +185,29 @@
      inkscape:label="Layer 1"
      style="display:inline">
     <image
-       xlink:href="file:///Users/filipe/Documents/PhD-Thesis/1VDS.png"
-       width="293.33334"
-       height="220"
-       id="image2886"
+       sodipodi:absref="/home/filipe/Documents/PhD-Thesis/1VDS.png"
+       xlink:href="1VDS.png"
+       y="572.36218"
        x="55"
-       y="572.36218" />
+       id="image2886"
+       height="220"
+       width="293.33334" />
+    <image
+       sodipodi:absref="/home/filipe/Documents/PhD-Thesis/SincColor.png"
+       xlink:href="SincColor.png"
+       width="256.62167"
+       height="208.12018"
+       id="image4478"
+       x="288.37833"
+       y="699.82147" />
     <g
-       id="g4822"
-       transform="translate(5.0000011,7.459277)">
-      <image
-         xlink:href="file:///Users/filipe/Documents/PhD-Thesis/SincColor.png"
-         width="256.62167"
-         height="208.12018"
-         id="image4478"
-         x="283.37833"
-         y="692.36218" />
-      <g
-         id="g4511"
-         transform="matrix(0.63597979,0,0,0.63597979,19.795288,1120.7982)">
-        <path
-           style="fill:url(#radialGradient4827);fill-opacity:1;stroke:none"
-           d="m 574.23949,-673.66294 259.44221,94.34262 -141.51393,259.4422 -290.88975,-157.2377 172.96147,-196.54712 z"
-           id="rect4494"
-           sodipodi:nodetypes="ccccc" />
-      </g>
+       transform="matrix(0.63597979,0,0,0.63597979,24.795289,1128.2575)"
+       id="g4511">
+      <path
+         sodipodi:nodetypes="ccccc"
+         id="rect4494"
+         d="m 574.23949,-673.66294 259.44221,94.34262 -141.51393,259.4422 -290.88975,-157.2377 172.96147,-196.54712 z"
+         style="fill:url(#radialGradient4827);fill-opacity:1;stroke:none" />
     </g>
     <rect
        style="fill:#a40000;fill-opacity:1;stroke:none"
