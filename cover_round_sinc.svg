@@ -24,10 +24,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="271.48492"
-     inkscape:cy="375.6801"
+     inkscape:cx="425.08903"
+     inkscape:cy="287.21741"
      inkscape:document-units="px"
-     inkscape:current-layer="svg2"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1437"
      inkscape:window-height="1156"
@@ -335,6 +335,14 @@
        fx="391.43411"
        fy="838.20984"
        r="169.20055" />
+    <filter
+       inkscape:collect="always"
+       id="filter3763">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.4251647"
+         id="feGaussianBlur3765" />
+    </filter>
   </defs>
   <metadata
      id="metadata7">
@@ -363,11 +371,11 @@
     <image
        sodipodi:absref="/home/filipe/Documents/PhD-Thesis/1VDS.png"
        xlink:href="1VDS.png"
-       y="572.36218"
-       x="55"
-       id="image2886"
+       width="293.33334"
        height="220"
-       width="293.33334" />
+       id="image2886"
+       x="55"
+       y="572.36218" />
     <rect
        style="fill:#a40000;fill-opacity:1;stroke:none"
        id="rect4507"
@@ -672,11 +680,11 @@
     <image
        sodipodi:absref="/home/filipe/Documents/PhD-Thesis/SincColorRound.png"
        xlink:href="SincColorRound.png"
-       width="469.53574"
-       height="380.79352"
-       id="image450488"
+       y="616.4693"
        x="153.95743"
-       y="616.4693" />
+       id="image450488"
+       height="380.79352"
+       width="469.53574" />
     <path
        sodipodi:type="arc"
        style="fill:url(#radialGradient451128);fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -690,11 +698,12 @@
     <image
        sodipodi:absref="/home/filipe/Documents/PhD-Thesis/SincColorCone.png"
        xlink:href="SincColorCone.png"
-       width="469.53586"
-       height="380.79355"
-       id="image450698"
+       style="filter:url(#filter3763)"
+       y="616.46924"
        x="153.95737"
-       y="616.46924" />
+       id="image450698"
+       height="380.79355"
+       width="469.53586" />
   </g>
   <g
      transform="matrix(0.56358123,0,0,0.56358123,-121.03861,717.93334)"
