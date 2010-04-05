@@ -107,7 +107,7 @@ operand is a function, and the discrete Fourier transform, when the operand is a
 vector.
  
 The DFT has properties analogous to most properties of its continuous
-counterpart, in particular it's a distance preserving transform, that is the distance between two vectors is the same before and after transformation
+counterpart, in particular it is a distance preserving transform, that is, the distance between two vectors is the same before and after transformation
 \begin{equation}
   |\mathscr{F}(x)-\mathscr{F}(y)| = |(x-y)|
 \end{equation}
@@ -150,8 +150,9 @@ where $\delta(x)$ represents the Dirac delta function.
     with the sampling function \Sha$(x)$ corresponding to sampling of the signal
     by a pixel detector. This corresponds to replicating the spectrum of the
     signal in Fourier space. Notice that there is no overlap of the replicated
-    spectra of the sampled signal in Fourier space (on the right). It is then possible to recover the original signal by selecting the
-    original signal with an appropriate rectangular window function
+    spectra of the sampled signal in Fourier space (on the right). It is then
+    possible to recover the original signal by selecting it
+    with an appropriate rectangular window function
     rect$(q)$. In real space this corresponds to a convolution with the
     corresponding sinc function sinc$(x)$.}
   \label{Fig:Sampling}
@@ -165,7 +166,7 @@ overlap and a perfect reconstruction is no longer possible. This phenomenon is k
 aliasing (see Fig. \ref{Fig:Undersampling}) and is related to eq. \ref{Eq:dft_convolution}. We call such a signal {\em undersampled}. If on the other hand
 the sampling frequency is higher than the Nyquist rate, we call it {\em
   oversampled} and we define the {\em oversampling ratio}, $\sigma$, as the ratio between the
-sampling frequency and the Nyquist rate, or equivalently the fraction between
+sampling frequency and the Nyquist rate or, equivalently, the fraction between
 the center of two replicas of the spectrum in Fourier space and the region for
 which the spectrum is different from zero, as illustrated in figure \ref{Fig:OversamplingRatio}.
 
@@ -186,7 +187,9 @@ which the spectrum is different from zero, as illustrated in figure \ref{Fig:Ove
   \centering
   \includegraphics[width=0.8 \columnwidth]{Fourier_Theory/Oversampling.png}
  \caption{The oversampling ratio, denoted by $\sigma$, is the ratio between the
-    size of the Fourier space and the region used by the signal.}
+    size of the Fourier space and the region over which the signal is different
+    than zero. %used by the signal.
+  }
   \label{Fig:OversamplingRatio}
 
 \end{figure}
